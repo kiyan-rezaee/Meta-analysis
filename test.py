@@ -3,7 +3,7 @@ from optparse import Values
 import PyPDF2
  
 # creating a pdf file object
-pdfFileObj = open(r'C:\Users\kiyan\Desktop\research code\papers\SinglaSIGIR2014.pdf', 'rb')
+pdfFileObj = open(r'C:\Users\kiyan\Desktop\research code\code\papers\2.pdf', 'rb')
  
 # creating a pdf reader object
 pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
@@ -26,6 +26,7 @@ featuresandquality = {
     '["competitive"]': "",
     '["usefulness"]': "",
     '["Jointly learning"]': "",
+    '["informativeness"]' : "",
     '["robustness"]': "",
     #features
     '["Text based", "Text-based"]': "",
@@ -68,6 +69,8 @@ featuresandquality = {
     '["query scoping"]': "",
     '["colour representation"]': "",
     '["co-occurrence"]': "",
+    '["Adaptive Weights"]':"",
+    '["Smoothing"]':"",
     '["Social Questions"]': ""
 }
 
@@ -90,7 +93,7 @@ for key in featuresandquality:
     keys.append(key)
     values.append(featuresandquality[key]) 
 
-for i in range(18):
+for i in range(19):
     if values[i] == "X":
         values[i] = "High"
 
