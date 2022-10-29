@@ -3,7 +3,7 @@ from optparse import Values
 import PyPDF2
 
 # creating a pdf file object
-# pdfFileObj = open(r'C:\Users\kiyan\Desktop\research code\code\papers\2.pdf', 'rb')
+# pdfFileObj = open(r'C:\Users\kiyan\Desktop\research code\code\papers\8.pdf', 'rb')
  
 # creating a pdf reader object
 pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
@@ -78,9 +78,9 @@ featuresandquality = {
     '["Query-based"]' :"",
     '["lexical items"]' :"",
     '["sponsored search"]' :"",
-    '["navigational queries"]' :"",
-    '["informational queries"]' :"",
-    '["transactional queries"]' :"",
+    '["navigational"]' :"",
+    '["informational"]' :"",
+    '["transactional"]' :"",
     '["Inverse Document Frequency"]' :""
 }
 
