@@ -3,7 +3,7 @@ from optparse import Values
 import PyPDF2
 
 # creating a pdf file object
-pdfFileObj = open(r'C:\Users\kiyan\Desktop\research code\code\papers\2.pdf', 'rb')
+# pdfFileObj = open(r'C:\Users\kiyan\Desktop\research code\code\papers\2.pdf', 'rb')
  
 # creating a pdf reader object
 pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
@@ -27,6 +27,7 @@ featuresandquality = {
     '["usefulness"]': "",
     '["Jointly learning"]': "",
     '["informativeness"]' : "",
+    '["validity"]' : "",
     '["robustness"]': "",
     #features
     '["Text based", "Text-based"]': "",
@@ -36,7 +37,7 @@ featuresandquality = {
     '["multi-type entities"]': "",
     '["Prediction", "predict"]': "",
     '["Multi lingual", "Multi lingual", "Multi-lingual"]': "",
-    '["Historical data", "data history", "search histories"]': "",
+    '["Historical data", "data history", "search histories", "history"]': "",
     '["Filter"]': "",
     '["behavior"]': "",
     '["graph based","graph-based"]': "",
@@ -71,7 +72,16 @@ featuresandquality = {
     '["co-occurrence"]': "",
     '["Adaptive Weights"]':"",
     '["Smoothing"]':"",
-    '["Social Questions"]': ""
+    '["Social Questions"]': "", 
+    '["Term Frequency"]' :"",
+    '["Sampling based"]' :"",
+    '["Query-based"]' :"",
+    '["lexical items"]' :"",
+    '["sponsored search"]' :"",
+    '["navigational queries"]' :"",
+    '["informational queries"]' :"",
+    '["transactional queries"]' :"",
+    '["Inverse Document Frequency"]' :""
 }
 
 for i in range(pdfReader.numPages):
