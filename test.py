@@ -102,7 +102,6 @@ for i in range(19):
 
 # pdfFileObj.close()
 print(featuresandquality)
-exit()
 import pandas as pd
 
 # dataframe Name and Age columns
