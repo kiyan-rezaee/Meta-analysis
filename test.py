@@ -1,13 +1,15 @@
 # importing required modules
 from optparse import Values
 import PyPDF2
- 
+
 # creating a pdf file object
-pdfFileObj = open(r'C:\Users\kiyan\Desktop\research code\code\papers\2.pdf', 'rb')
- 
+pdfFileObj = open(
+    r"C:\Documents\Mehrshad\User Intent Modeling\Actively predicting diverse search intent from user browsing behaviors.pdf",
+    'rb')
+
 # creating a pdf reader object
 pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
- 
+
 featuresandquality = {
     '["Performance"]': "",
     '["Recommendation performance"]': "",
@@ -22,11 +24,11 @@ featuresandquality = {
     '["Recommendation Efficiency"]': "",
     '["Explainability", "interpretability"]': "",
     '["Prediction uncertainty"]': "",
-    '["Flexibility"]' : "",
+    '["Flexibility"]': "",
     '["competitive"]': "",
     '["usefulness"]': "",
     '["Jointly learning"]': "",
-    '["informativeness"]' : "",
+    '["informativeness"]': "",
     '["robustness"]': "",
     #features
     '["Text based", "Text-based"]': "",
@@ -48,30 +50,32 @@ featuresandquality = {
     '["Subjective Questions"]': "",
     '["Item recommendation"]': "",
     '["Pre-trained Model"]': "",
-    '["Vertical search engines"]' : "", 
-    '["Text similarity"]' : "" ,
-    '["colour similarity"]' : "", 
-    '["Topic similarity"]' : "" ,
-    '["Rating behaviors"]' : "" ,
-    '["Topic Model"]' : "" ,
-    '["user-oriented topics"]' : "", 
-    '["time-oriented topics"]' : "" ,
-    '["data sparseness"]' : "" ,
-    '["Language model"]' : "" ,
-    '["Context-aware"]' : "" ,
+    '["Vertical search engines"]': "",
+    '["Text similarity"]': "",
+    '["colour similarity","color similarity"]': "",
+    '["Topic similarity"]': "",
+    '["Rating behaviors"]': "",
+    '["Topic Model"]': "",
+    '["user-oriented topics"]': "",
+    '["time-oriented topics"]': "",
+    '["data sparseness"]': "",
+    '["Language model"]': "",
+    '["Context-aware","Context aware"]': "",
     '["asynchronous training"]': "",
     '["network architecture"]': "",
     '["optimization perspective"]': "",
-    '["feature perspective"]' : "" ,
+    '["feature perspective"]': "",
     '["generative"]': "",
     '["machine reading comprehension"]': "",
     '["Quality control"]': "",
     '["query scoping"]': "",
-    '["colour representation"]': "",
+    '["colour representation","color representation"]': "",
     '["co-occurrence"]': "",
-    '["Adaptive Weights"]':"",
-    '["Smoothing"]':"",
-    '["Social Questions"]': ""
+    '["Adaptive Weights"]': "",
+    '["Smoothing"]': "",
+    '["Social Questions"]': "",
+    '["Term Frequency"]': "",
+    '["Inverse Document Frequency"]': "",
 }
 
 for i in range(pdfReader.numPages):
@@ -85,20 +89,20 @@ for i in range(pdfReader.numPages):
                 featuresandquality[j] = 'X'
                 break
 
-
 keys = []
 values = []
 
 for key in featuresandquality:
     keys.append(key)
-    values.append(featuresandquality[key]) 
+    values.append(featuresandquality[key])
 
 for i in range(19):
     if values[i] == "X":
         values[i] = "High"
 
 # pdfFileObj.close()
-
+print(featuresandquality)
+exit()
 import pandas as pd
 
 # dataframe Name and Age columns
@@ -106,7 +110,6 @@ df = pd.DataFrame()
 
 for i in range(len(keys)):
     df[keys[i]] = 0
-
 
 df.loc[len(df)] = values
 
