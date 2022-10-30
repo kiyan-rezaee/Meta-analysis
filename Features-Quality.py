@@ -1,14 +1,17 @@
 # importing required modules
 from optparse import Values
+import pandas as pd
 import PyPDF2
 
 # creating a pdf file object
-# pdfFileObj = open(r'C:\Users\kiyan\Desktop\research code\code\papers\8.pdf', 'rb')
- 
+pdfFileObj = open(
+    r"C:\Documents\Mehrshad\User Intent Modeling\Bridging topic modeling and personalized search.pdf",
+    'rb')
+
 # creating a pdf reader object
 pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
 
-featuresandquality = {
+quality = {
     '["Performance"]': "",
     '["Recommendation performance"]': "",
     '["Resource Efficiency"]': "",
@@ -26,10 +29,11 @@ featuresandquality = {
     '["competitive"]': "",
     '["usefulness"]': "",
     '["Jointly learning"]': "",
-    '["informativeness"]' : "",
-    '["validity"]' : "",
+    '["informativeness"]': "",
+    '["validity"]': "",
     '["robustness"]': "",
-    #features
+}
+features = {
     '["Text based", "Text-based"]': "",
     '["Rank"]': "",
     '["Multi-criteria ratings"]': "",
@@ -70,19 +74,22 @@ featuresandquality = {
     '["query scoping"]': "",
     '["colour representation","color representation"]': "",
     '["co-occurrence"]': "",
-    '["Adaptive Weights"]':"",
-    '["Smoothing"]':"",
-    '["Social Questions"]': "", 
-    '["Term Frequency"]' :"",
-    '["Sampling based"]' :"",
-    '["Query-based"]' :"",
-    '["lexical items"]' :"",
-    '["sponsored search"]' :"",
-    '["navigational"]' :"",
-    '["informational"]' :"",
-    '["transactional"]' :"",
-    '["Inverse Document Frequency"]' :""
+    '["Adaptive Weights"]': "",
+    '["Smoothing"]': "",
+    '["Social Questions"]': "",
+    '["Term Frequency"]': "",
+    '["Sampling based"]': "",
+    '["Query-based"]': "",
+    '["lexical items"]': "",
+    '["sponsored search"]': "",
+    '["navigational"]': "",
+    '["informational"]': "",
+    '["transactional"]': "",
+    '["Alleviating data sparsity"]': "",
+    '["Inverse Document Frequency"]': ""
 }
+featuresandquality = quality.copy()
+featuresandquality.update(features)
 
 for i in range(pdfReader.numPages):
     pageObj = pdfReader.getPage(i)
@@ -97,20 +104,18 @@ for i in range(pdfReader.numPages):
 
 keys = []
 values = []
-
 for key in featuresandquality:
+    if featuresandquality[key] == 'X':
+        print(key)
     keys.append(key)
     values.append(featuresandquality[key])
 
-for i in range(20):
+for i in range(len(quality)):
     if values[i] == "X":
         values[i] = "High"
 
 # pdfFileObj.close()
 
-import pandas as pd
-
-# dataframe Name and Age columns
 df = pd.DataFrame()
 
 for i in range(len(keys)):
@@ -121,7 +126,7 @@ df.loc[len(df)] = values
 print(df)
 
 # Create a Pandas Excel writer using XlsxWriter as the engine.
-writer = pd.ExcelWriter('demo.xlsx', engine='xlsxwriter')
+writer = pd.ExcelWriter('features-quality.xlsx', engine='xlsxwriter')
 
 # Convert the dataframe to an XlsxWriter Excel object.
 df.to_excel(writer, sheet_name='Sheet1', index=False)
