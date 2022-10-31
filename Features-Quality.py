@@ -31,6 +31,7 @@ quality = {
     '["Jointly learning"]': "",
     '["informativeness"]': "",
     '["validity"]': "",
+    '["Retrieval accuracy"]': "",
     '["robustness"]': "",
 }
 features = {
@@ -88,6 +89,8 @@ features = {
     '["Alleviating data sparsity"]': "",
     '["Heuristic"]': "",
     '["query refinement"]': "",
+    '["Pruning"]': "",
+    '["Negative feedback"]': "",
     '["Inverse Document Frequency"]': ""
 }
 featuresandquality = quality.copy()
