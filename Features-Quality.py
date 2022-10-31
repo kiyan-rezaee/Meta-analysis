@@ -132,7 +132,7 @@ for i in range(len(keys)):
 
 df.loc[len(df)] = values
 
-print(df)
+# print(df)
 
 # Create a Pandas Excel writer using XlsxWriter as the engine.
 writer = pd.ExcelWriter('features-quality.xlsx', engine='xlsxwriter')
