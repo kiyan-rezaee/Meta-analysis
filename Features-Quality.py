@@ -5,7 +5,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\Bridging topic modeling and personalized search.pdf",
+    r"C:\Documents\Mehrshad\User Intent Modeling\Clickthrough-based translation models for web search from word models to phrase models.pdf",
     'rb')
 
 # creating a pdf reader object
@@ -86,6 +86,7 @@ features = {
     '["informational"]': "",
     '["transactional"]': "",
     '["Alleviating data sparsity"]': "",
+    '["Heuristic"]': "",
     '["Inverse Document Frequency"]': ""
 }
 featuresandquality = quality.copy()
