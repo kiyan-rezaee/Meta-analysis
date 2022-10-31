@@ -5,7 +5,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\Clustering query refinements by user intent.pdf",
+    r"C:\Users\kiyan\Desktop\research code\code\papers\15.pdf",
     'rb')
 
 # creating a pdf reader object
@@ -32,6 +32,9 @@ quality = {
     '["informativeness"]': "",
     '["validity"]': "",
     '["Retrieval accuracy"]': "",
+    '["reliability"]':"",	
+    '["comparability"]': "",
+    '["Search quality"]' : "",
     '["robustness"]': "",
 }
 features = {
@@ -93,6 +96,7 @@ features = {
     '["Density-Based","Density Based"]': "",
     '["Pruning"]': "",
     '["Negative feedback"]': "",
+    '["topic coverage"]':"",
     '["Inverse Document Frequency"]': ""
 }
 print(f"qualities count: {len(quality)}")
