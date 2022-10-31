@@ -88,6 +88,10 @@ features = {
     '["Alleviating data sparsity"]': "",
     '["Heuristic"]': "",
     '["query refinement"]': "",
+    '["Partitional"]': "",
+    '["Density-Based","Density Based"]': "",
+    '["Pruning"]': "",
+    '["Negative feedback"]': "",
     '["Inverse Document Frequency"]': ""
 }
 featuresandquality = quality.copy()
