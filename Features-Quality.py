@@ -31,9 +31,9 @@ quality = {
     '["Jointly learning"]': "",
     '["informativeness"]': "",
     '["validity"]': "",
-    '["Retrieval accuracy"]': "",
     '["reliability"]':"",	
     '["comparability"]': "",
+    '["Retrieval accuracy"]': "",
     '["Search quality"]' : "",
     '["robustness"]': "",
 }
