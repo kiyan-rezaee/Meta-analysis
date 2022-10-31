@@ -94,6 +94,8 @@ features = {
     '["Negative feedback"]': "",
     '["Inverse Document Frequency"]': ""
 }
+print(f"qualities count: {len(quality)}")
+print(f"features count: {len(features)}")
 featuresandquality = quality.copy()
 featuresandquality.update(features)
 
