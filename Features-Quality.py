@@ -5,7 +5,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"",
+    r"C:\Documents\Mehrshad\User Intent Modeling\Context-aware ranking in web search.pdf",
     'rb')
 
 # creating a pdf reader object
@@ -101,6 +101,8 @@ features = {
     '["Search trail"]': "",
     '["labeled data"]': "",
     '["commercial queries"]': "",
+    '["Query Suggestions"]': "",
+    '["Empirically"]': "",
     '["Inverse Document Frequency"]': ""
 }
 print(f"qualities count: {len(quality)}")
