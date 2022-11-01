@@ -31,10 +31,11 @@ quality = {
     '["Jointly learning"]': "",
     '["informativeness"]': "",
     '["validity"]': "",
-    '["reliability"]':"",
+    '["reliability"]': "",
     '["comparability"]': "",
     '["Retrieval accuracy"]': "",
-    '["Search quality"]' : "",
+    '["Search quality"]': "",
+    '["specificity"]': "",
     '["robustness"]': "",
 }
 features = {
