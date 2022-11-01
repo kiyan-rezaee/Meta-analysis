@@ -5,7 +5,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\kiyan\Desktop\research code\code\papers\15.pdf",
+    r"",
     'rb')
 
 # creating a pdf reader object
@@ -31,7 +31,7 @@ quality = {
     '["Jointly learning"]': "",
     '["informativeness"]': "",
     '["validity"]': "",
-    '["reliability"]':"",	
+    '["reliability"]':"",
     '["comparability"]': "",
     '["Retrieval accuracy"]': "",
     '["Search quality"]' : "",
@@ -117,9 +117,22 @@ for i in range(pdfReader.numPages):
 
 keys = []
 values = []
-for key in featuresandquality:
+
+
+def excelCol(num):
+    n = num + 14
+    result = ""
+    while True:
+        if n > 26:
+            n, r = divmod(n - 1, 26)
+            result = chr(r + ord('A')) + result
+        else:
+            return chr(n + ord('A') - 1) + result
+
+
+for key,col in zip(featuresandquality,range(9999)):
     if featuresandquality[key] == 'X':
-        print(key)
+        print(excelCol(col),key)
     keys.append(key)
     values.append(featuresandquality[key])
 
