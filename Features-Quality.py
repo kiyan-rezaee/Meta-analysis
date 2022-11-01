@@ -96,7 +96,11 @@ features = {
     '["Density-Based","Density Based"]': "",
     '["Pruning"]': "",
     '["Negative feedback"]': "",
-    '["topic coverage"]':"",
+    '["topic coverage"]': "",
+    '["search goal","search task"]': "",
+    '["Search trail"]': "",
+    '["labeled data"]': "",
+    '["commercial queries"]': "",
     '["Inverse Document Frequency"]': ""
 }
 print(f"qualities count: {len(quality)}")
