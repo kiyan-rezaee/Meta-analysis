@@ -104,6 +104,7 @@ features = {
     '["commercial queries"]': "",
     '["Query Suggestions"]': "",
     '["Empirically"]': "",
+    '["Query privacy","Query-privacy"]': "",
     '["Inverse Document Frequency"]': ""
 }
 print(f"qualities count: {len(quality)}")
