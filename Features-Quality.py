@@ -104,6 +104,7 @@ features = {
     '["commercial queries"]': "",
     '["Query Suggestions"]': "",
     '["Empirically"]': "",
+    '["Term Weight","Weighting term","Term-Weight"]': "",
     '["Query privacy","Query-privacy"]': "",
     '["Inverse Document Frequency"]': ""
 }
