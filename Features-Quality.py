@@ -1,15 +1,11 @@
-# importing required modules
 from optparse import Values
 import pandas as pd
 import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\saram\Desktop\3.pdf",
+    r"C:\Documents\Mehrshad\User Intent Modeling\Learning recurrent event queries for web search.pdf",
     'rb')
-
-# creating a pdf reader object
-pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
 
 quality = {
     '["Performance"]': "",
@@ -109,12 +105,15 @@ features = {
     '["Query privacy","Query-privacy"]': "",
     '["sophisticated"]': "",
     '["tag relevan","tag-relevan"]': "",
-    '["Inverse Document Frequency","IDF"]': ""
+    '["Inverse Document Frequency"]': ""
 }
 print(f"qualities count: {len(quality)}")
 print(f"features count: {len(features)}")
 featuresandquality = quality.copy()
 featuresandquality.update(features)
+
+# creating a pdf reader object
+pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
 
 for i in range(pdfReader.numPages):
     pageObj = pdfReader.getPage(i)
@@ -142,9 +141,9 @@ def excelCol(num):
             return chr(n + ord('A') - 1) + result
 
 
-for key,col in zip(featuresandquality,range(9999)):
+for key, col in zip(featuresandquality, range(9999)):
     if featuresandquality[key] == 'X':
-        print(excelCol(col),key)
+        print(excelCol(col), key)
     keys.append(key)
     values.append(featuresandquality[key])
 
