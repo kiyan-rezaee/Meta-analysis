@@ -4,7 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\Learning recurrent event queries for web search.pdf",
+    r"C:\Users\kiyan\Desktop\research code\code\papers\yu2012.pdf",
     'rb')
 
 quality = {
@@ -105,6 +105,9 @@ features = {
     '["Query privacy","Query-privacy"]': "",
     '["sophisticated"]': "",
     '["tag relevan","tag-relevan"]': "",
+    '["Query Segmentation"]':"",
+    '["name entity recognition"]': "",
+    '["part-of-speech tagging", "part of speech", "part-of-speech"]' : "",
     '["Inverse Document Frequency"]': ""
 }
 print(f"qualities count: {len(quality)}")
