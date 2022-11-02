@@ -5,11 +5,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-<<<<<<< Updated upstream
-    r"C:\Documents\Mehrshad\User Intent Modeling\Evaluating verbose query processing techniques.pdf",
-=======
-    r"C:\Users\saram\Desktop\2.pdf",
->>>>>>> Stashed changes
+    r"C:\Users\saram\Desktop\3.pdf",
     'rb')
 
 # creating a pdf reader object
@@ -111,6 +107,7 @@ features = {
     '["Empirically"]': "",
     '["Weight"]': "",
     '["Query privacy","Query-privacy"]': "",
+    '["sophisticated"]': "",
     '["Inverse Document Frequency","IDF"]': ""
 }
 print(f"qualities count: {len(quality)}")
