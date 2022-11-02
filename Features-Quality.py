@@ -4,7 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\Open entity extraction from web search query logs.pdf",
+    r"",
     'rb')
 
 quality = {
