@@ -5,7 +5,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\Context-aware ranking in web search.pdf",
+    r"C:\Documents\Mehrshad\User Intent Modeling\Evaluating verbose query processing techniques.pdf",
     'rb')
 
 # creating a pdf reader object
@@ -36,6 +36,7 @@ quality = {
     '["Retrieval accuracy"]': "",
     '["Search quality"]': "",
     '["specificity"]': "",
+    '["interactivity"]': "",
     '["robustness"]': "",
 }
 features = {
@@ -104,9 +105,9 @@ features = {
     '["commercial queries"]': "",
     '["Query Suggestions"]': "",
     '["Empirically"]': "",
-    '["Term Weight","Weighting term","Term-Weight"]': "",
+    '["Weight"]': "",
     '["Query privacy","Query-privacy"]': "",
-    '["Inverse Document Frequency"]': ""
+    '["Inverse Document Frequency","IDF"]': ""
 }
 print(f"qualities count: {len(quality)}")
 print(f"features count: {len(features)}")
