@@ -113,6 +113,7 @@ features = {
     '["click through", "click-through"]':"",
     '["image similarity"]': "",
     '["geolocation"]': "",
+    '["similarity computation"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
