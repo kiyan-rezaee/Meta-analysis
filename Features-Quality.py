@@ -4,7 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\Learning with click graph for query intent classification.pdf",
+    "../cikm11-jarguello.pdf",
     'rb')
 
 quality = {
@@ -110,7 +110,7 @@ features = {
     '["part-of-speech tagging", "part of speech", "part-of-speech"]': "",
     '["word cluster","word-cluster"]': "",
     '["vertical intent", "vertical-intent"]':"",
-    '["named entity", "named-entity"]':"",
+    '["click through", "click-through"]':"",
     '["Inverse Document Frequency"]': ""
 }
 print(f"qualities count: {len(quality)}")
