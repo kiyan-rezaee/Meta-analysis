@@ -56,7 +56,7 @@ features = {
     '["Item recommendation"]': "",
     '["Pre-trained Model"]': "",
     '["Vertical search engines"]': "",
-    '["Text similarity"]': "",
+    '["Text similarity", "text-similarity"]': "",
     '["colour similarity","color similarity"]': "",
     '["Topic similarity"]': "",
     '["Rating behaviors"]': "",
@@ -109,6 +109,8 @@ features = {
     '["name entity recognition"]': "",
     '["part-of-speech tagging", "part of speech", "part-of-speech"]': "",
     '["word cluster","word-cluster"]': "",
+    '["vertical intent", "vertical-intent"]':"",
+    '["named entity", "named-entity"]':"",
     '["Inverse Document Frequency"]': ""
 }
 print(f"qualities count: {len(quality)}")
