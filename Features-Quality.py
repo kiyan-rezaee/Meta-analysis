@@ -4,7 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\saram\Desktop\4.pdf",
+    r"C:\Users\saram\Desktop\6.pdf",
     'rb')
 
 quality = {
@@ -111,9 +111,9 @@ features = {
     '["word cluster","word-cluster"]': "",
     '["vertical intent", "vertical-intent"]':"",
     '["click through", "click-through"]':"",
-    '["image similarity"]': ""
-    '["geolocation"]': ""
-    '["Inverse Document Frequency"]': ""
+    '["image similarity"]': "",
+    '["geolocation"]': "",
+    '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
 print(f"features count: {len(features)}")
