@@ -36,7 +36,7 @@ quality = {
     '["Retrieval accuracy"]': "",
     '["Search quality"]': "",
     '["specificity"]': "",
-    '["interactivity"]': "",
+    '["interactivity", "interaction"]': "",
     '["robustness"]': "",
 }
 features = {
