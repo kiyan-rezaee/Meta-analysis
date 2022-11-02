@@ -112,6 +112,7 @@ features = {
     '["vertical intent", "vertical-intent"]':"",
     '["click through", "click-through"]':"",
     '["image similarity"]': ""
+    '["geolocation"]': ""
     '["Inverse Document Frequency"]': ""
 }
 print(f"qualities count: {len(quality)}")
