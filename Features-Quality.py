@@ -108,6 +108,7 @@ features = {
     '["Weight"]': "",
     '["Query privacy","Query-privacy"]': "",
     '["sophisticated"]': "",
+    '["tag relevan","tag-relevan"]': "",
     '["Inverse Document Frequency","IDF"]': ""
 }
 print(f"qualities count: {len(quality)}")
