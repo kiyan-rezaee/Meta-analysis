@@ -4,7 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\saram\Desktop\6.pdf",
+    r"C:\Documents\Mehrshad\User Intent Modeling\Open entity extraction from web search query logs.pdf",
     'rb')
 
 quality = {
@@ -109,10 +109,11 @@ features = {
     '["name entity recognition"]': "",
     '["part-of-speech tagging", "part of speech", "part-of-speech"]': "",
     '["word cluster","word-cluster"]': "",
-    '["vertical intent", "vertical-intent"]':"",
-    '["click through", "click-through"]':"",
+    '["click through", "click-through"]': "",
+    '["vertical intent", "vertical-intent"]': "",
     '["image similarity"]': "",
     '["geolocation"]': "",
+    '["similarity computation","similarity-computation"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
