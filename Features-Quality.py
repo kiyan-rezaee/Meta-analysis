@@ -4,7 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    "../cikm11-jarguello.pdf",
+    r"C:\Users\saram\Desktop\4.pdf",
     'rb')
 
 quality = {
@@ -111,6 +111,7 @@ features = {
     '["word cluster","word-cluster"]': "",
     '["vertical intent", "vertical-intent"]':"",
     '["click through", "click-through"]':"",
+    '["image similarity"]': ""
     '["Inverse Document Frequency"]': ""
 }
 print(f"qualities count: {len(quality)}")
