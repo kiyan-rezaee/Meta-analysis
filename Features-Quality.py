@@ -5,7 +5,11 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
+<<<<<<< Updated upstream
     r"C:\Documents\Mehrshad\User Intent Modeling\Evaluating verbose query processing techniques.pdf",
+=======
+    r"C:\Users\saram\Desktop\2.pdf",
+>>>>>>> Stashed changes
     'rb')
 
 # creating a pdf reader object
@@ -92,7 +96,7 @@ features = {
     '["informational"]': "",
     '["transactional"]': "",
     '["Alleviating data sparsity"]': "",
-    '["Heuristic"]': "",
+    '["Heuristic" , "Ranking Heuristic"]': "",
     '["query refinement"]': "",
     '["Partitional"]': "",
     '["Density-Based","Density Based"]': "",
