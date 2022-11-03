@@ -113,6 +113,7 @@ features = {
     '["vertical intent", "vertical-intent"]': "",
     '["image similarity"]': "",
     '["geolocation"]': "",
+    '["end-to-end"]': "",
     '["similarity computation","similarity-computation"]': "",
     '["Inverse Document Frequency"]': "",
 }
