@@ -116,6 +116,7 @@ features = {
     '["geolocation"]': "",
     '["end-to-end"]': "",
     '["similarity computation","similarity-computation"]': "",
+    '["ambiguous queries"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
