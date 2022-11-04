@@ -44,7 +44,7 @@ models = [
     'DLA', 'NMF', 'ConvMF', 'DeepCoNN', 'SAT', 'Att2Seq', 'ResNet', 'QRFA',
     'CIR6', 'MDP', 'AEM', 'TEM', 'LSE', 'PPWE', 'PWEBA', 'UserKNN', 'TOP',
     'HRM', 'HTMM', 'RANDOM', 'MCoC', 'MART', 'SERP', 'Rocchio', 'Perturbation',
-    'SingleNeg', 'MultiNeg'
+    'SingleNeg', 'MultiNeg', 'GPR', 'SVR'
 ]
 
 ls = ['' for i in range(len(models))]
@@ -56,7 +56,7 @@ import PyPDF2
 # creating a pdf file object
 
 pdfFileObj = open(
-    "../sp0771-giannopoulosPS2.pdf",
+    "../p277.pdf",
     'rb')
 
 # creating a pdf reader object
