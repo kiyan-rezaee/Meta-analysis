@@ -34,6 +34,7 @@ quality = {
     '["specificity"]': "",
     '["interactivity", "interaction"]': "",
     '["Predictability"]': "",
+    '["diversity", "diverse", "diversify"]': "",
     '["robustness"]': "",
 }
 features = {
