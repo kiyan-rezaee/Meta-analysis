@@ -120,6 +120,7 @@ features = {
     '["similarity computation","similarity-computation"]': "",
     '["ambiguous queries"]': "",
     '["Simulation-based"]': "",
+    '["Query-independent", "Query independent", "Query independence"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
