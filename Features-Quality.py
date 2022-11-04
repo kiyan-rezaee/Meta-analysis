@@ -46,7 +46,7 @@ features = {
     '["Historical data", "data history", "search histories", "history"]': "",
     '["Filter"]': "",
     '["behavior"]': "",
-    '["graph based","graph-based", "graph"s]': "",
+    '["graph based","graph-based", "graph"]': "",
     '["relevance-based", "relevant"]': "",
     '["Community Question Answering"]': "",
     '["Unlabeled data"]': "",
