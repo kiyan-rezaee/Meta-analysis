@@ -4,7 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\saram\Desktop\9.pdf",
+    r"C:\Users\kiyan\Desktop\research code\code\papers\26.pdf",
     'rb')
 
 quality = {
@@ -120,6 +120,8 @@ features = {
     '["similarity computation","similarity-computation"]': "",
     '["ambiguous queries"]': "",
     '["Simulation-based"]': "",
+    '["Semantic interpretation"]' : "",
+    '["Query independent"]' : "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
