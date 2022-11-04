@@ -21,7 +21,7 @@ quality = {
     '["Recommendation Efficiency"]': "",
     '["Explainability", "interpretability"]': "",
     '["Prediction uncertainty"]': "",
-    '["Flexibility"]': "",
+    '["flexibility"]': "",
     '["competitive"]': "",
     '["usefulness"]': "",
     '["Jointly learning"]': "",
