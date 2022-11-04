@@ -56,7 +56,7 @@ import PyPDF2
 # creating a pdf file object
 
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\Assessing the scenic route measuring the value of search trails in web logs.pdf",
+    "../sp0771-giannopoulosPS2.pdf",
     'rb')
 
 # creating a pdf reader object
@@ -78,7 +78,8 @@ keys = []
 
 values = []
 
-print(models)
+# print(models)
+print({k: v for k, v in models.items() if v == "X"})
 exit()
 for key in models:
     keys.append(key)
