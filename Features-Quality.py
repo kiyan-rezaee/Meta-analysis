@@ -119,6 +119,7 @@ features = {
     '["end-to-end"]': "",
     '["similarity computation","similarity-computation"]': "",
     '["ambiguous queries"]': "",
+    '["Simulation-based"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
