@@ -4,7 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\saram\Desktop\8.pdf",
+    r"C:\Users\saram\Desktop\9.pdf",
     'rb')
 
 quality = {
@@ -35,6 +35,7 @@ quality = {
     '["interactivity", "interaction"]': "",
     '["Predictability"]': "",
     '["diversity", "diverse", "diversify"]': "",
+    '["randomization"]': "",
     '["robustness"]': "",
 }
 features = {
