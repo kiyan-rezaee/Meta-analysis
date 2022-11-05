@@ -4,7 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\Linked open data-based explanations for transparent recommender systems.pdf",
+    r"",
     'rb')
 
 quality = {
@@ -135,6 +135,9 @@ features = {
     '["domain-independent"]': "",
     '["underlying recommendation"]': "",
     '["Rule-based Template Completion"]': "",
+    '["Modification", "Query Modifications"]': "",
+    '["Identical queries"]': "",
+    '["Query Overlap"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
