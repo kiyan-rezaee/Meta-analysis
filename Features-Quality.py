@@ -4,11 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-<<<<<<< HEAD
     r"C:\Users\saram\Desktop\12.pdf",
-=======
-    "../p117.pdf",
->>>>>>> a9922e8997319227046b5f360978910d64f76be9
     'rb')
 
 quality = {
