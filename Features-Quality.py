@@ -4,7 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\saram\Desktop\12.pdf",
+    r"C:\Documents\Mehrshad\User Intent Modeling\Linked open data-based explanations for transparent recommender systems.pdf",
     'rb')
 
 quality = {
@@ -19,7 +19,7 @@ quality = {
     '["Recommendation Effectiveness"]': "",
     '["Computational cost"]': "",
     '["Recommendation Efficiency"]': "",
-    '["Explainability", "interpretability"]': "",
+    '["Explainability"]': "",
     '["Prediction uncertainty"]': "",
     '["flexibility"]': "",
     '["competitive"]': "",
@@ -36,6 +36,10 @@ quality = {
     '["Predictability"]': "",
     '["diversity", "diverse", "diversify"]': "",
     '["randomization"]': "",
+    '["Satisfaction"]': "",
+    '["Persuasiveness"]': "",
+    '["Transparency"]': "",
+    '["Scrutab"]': "",
     '["latency"]': "",
     '["robustness"]': "",
 }
@@ -124,8 +128,12 @@ features = {
     '["Semantic interpretation"]': "",
     '["Query independent", "Query independent", "Query independence"]': "",
     '["time-based"]': "",
+    '["tag-based","tagbased","tag based"]': "",
+    '["content-based","content based"]': "",
     '["algorithm-independent"]': "",
+    '["agnostic"]': "",
     '["domain-independent"]': "",
+    '["underlying recommendation"]': "",
     '["Rule-based Template Completion"]': "",
     '["Inverse Document Frequency"]': "",
 }
