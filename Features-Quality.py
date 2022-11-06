@@ -4,7 +4,11 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
+<<<<<<< HEAD
     r"C:\Users\saram\Desktop\12.pdf",
+=======
+    r"",
+>>>>>>> c197ea3fb40145b99b1f495fef64f228e6b94efb
     'rb')
 
 quality = {
@@ -127,7 +131,9 @@ features = {
     '["Simulation-based"]': "",
     '["Semantic interpretation"]': "",
     '["Query independent", "Query independent", "Query independence"]': "",
+    '["stepwise"]': "",
     '["time-based"]': "",
+    '["Semantic similarity","Semantic-similarity"]': "",
     '["tag-based","tagbased","tag based"]': "",
     '["content-based","content based"]': "",
     '["algorithm-independent"]': "",
@@ -135,6 +141,9 @@ features = {
     '["domain-independent"]': "",
     '["underlying recommendation"]': "",
     '["Rule-based Template Completion"]': "",
+    '["Modification", "Query Modifications"]': "",
+    '["Identical queries"]': "",
+    '["Query Overlap"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
