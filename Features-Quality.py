@@ -4,7 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\Linked open data-based explanations for transparent recommender systems.pdf",
+    r"C:\Users\saram\Desktop\12.pdf",
     'rb')
 
 quality = {
