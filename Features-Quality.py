@@ -1,6 +1,8 @@
 from optparse import Values
 import pandas as pd
 import PyPDF2
+#pip install pyperclip (vase copy kardan)
+import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
@@ -198,7 +200,8 @@ for i in range(len(keys)):
 
 df.loc[len(df)] = values
 
-# print(df)
+pyperclip.copy('\t'.join(values))
+print('Copied to clipboard!')
 
 # Create a Pandas Excel writer using XlsxWriter as the engine.
 writer = pd.ExcelWriter('features-quality.xlsx', engine='xlsxwriter')
