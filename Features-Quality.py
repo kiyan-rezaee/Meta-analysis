@@ -141,7 +141,7 @@ features = {
     '["Identical queries"]': "",
     '["Query Overlap"]': "",
     '["statistical methods"]': "",
-    '["contextual graph"]': "",
+    '["contextual graph", "contextual diagram"]': "",
     '["conceptual map"]': "",
     '["Inverse Document Frequency"]': "",
 }
