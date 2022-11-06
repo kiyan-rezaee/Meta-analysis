@@ -10,7 +10,7 @@ pdfFileObj = open(
 quality = {
     '["Performance"]': "",
     '["Recommendation performance"]': "",
-    '["Resource Efficiency"]': "",
+    '["Resource Efficiency", "Efficiency"]': "",
     '["Resource utilization"]': "",
     '["stability", "stable"]': "",
     '["interpretability"]': "",
