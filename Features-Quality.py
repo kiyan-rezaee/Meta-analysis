@@ -6,7 +6,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\A topic-based recommender system for electronic marketplace platforms.pdf",
+    r"",
     'rb')
 
 quality = {
@@ -145,6 +145,7 @@ features = {
     '["statistical methods"]': "",
     '["contextual graph", "contextual diagram"]': "",
     '["conceptual map"]': "",
+    '["tail queries"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
