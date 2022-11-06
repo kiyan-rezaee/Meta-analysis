@@ -4,7 +4,7 @@ import PyPDF2
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\saram\Desktop\14.pdf",
+    r"C:\Documents\Mehrshad\User Intent Modeling\A topic-based recommender system for electronic marketplace platforms.pdf",
     'rb')
 
 quality = {
@@ -66,7 +66,7 @@ features = {
     '["Vertical search engines"]': "",
     '["Text similarity", "text-similarity"]': "",
     '["colour similarity","color similarity"]': "",
-    '["Topic similarity"]': "",
+    '["Topic similarity","Topic-similarity"]': "",
     '["Rating behaviors"]': "",
     '["Topic Model"]': "",
     '["user-oriented topics"]': "",
