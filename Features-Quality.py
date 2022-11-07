@@ -6,7 +6,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\kiyan\Desktop\research code\code\papers\5.pdf",
+    r"C:\Documents\Mehrshad\User Intent Modeling\The use of machine learning algorithms in recommender systems A systematic review.pdf",
     'rb')
 
 quality = {
@@ -44,6 +44,7 @@ quality = {
     '["Scrutab"]': "",
     '["latency"]': "",
     '["Low-cost deployability"]': "",
+    '["simplicity"]': "",
     '["Extending access"]': "",
     '["robustness"]': "",
 }
