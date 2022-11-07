@@ -6,7 +6,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\The use of machine learning algorithms in recommender systems A systematic review.pdf",
+    r"C:\Users\kiyan\Desktop\research code\code\papers\Joint latent topic models for text and citations.pdf",
     'rb')
 
 quality = {
@@ -147,8 +147,10 @@ features = {
     '["Query Overlap"]': "",
     '["statistical methods"]': "",
     '["contextual graph", "contextual diagram"]': "",
+    '["matrix factorization"]': "",
     '["conceptual map"]': "",
     '["tail queries"]': "",
+    '["TEXTUAL SIMILARITY"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
