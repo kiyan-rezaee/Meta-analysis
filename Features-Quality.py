@@ -6,7 +6,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\kiyan\Desktop\research code\code\papers\Radlinski08AdRanking.pdf",
+    r"C:\Documents\Mehrshad\User Intent Modeling\Characterizing context-aware recommender systems A systematic literature review.pdf",
     'rb')
 
 quality = {
@@ -190,7 +190,7 @@ def excelCol(num):
 
 for key, col in zip(featuresandquality, range(9999)):
     if featuresandquality[key] == 'X':
-        print(excelCol(col), key)
+        print(f"{excelCol(col)}: {eval(key)[0]}")
     keys.append(key)
     values.append(featuresandquality[key])
 
@@ -198,23 +198,20 @@ for i in range(len(quality)):
     if values[i] == "X":
         values[i] = "High"
 
-# pdfFileObj.close()
-
-df = pd.DataFrame()
-
-for i in range(len(keys)):
-    df[keys[i]] = 0
-
-df.loc[len(df)] = values
-
 pyperclip.copy('\t'.join(values))
 print('Copied to clipboard!')
 
-# Create a Pandas Excel writer using XlsxWriter as the engine.
-writer = pd.ExcelWriter('features-quality.xlsx', engine='xlsxwriter')
+# pdfFileObj.close()
 
-# Convert the dataframe to an XlsxWriter Excel object.
-df.to_excel(writer, sheet_name='Sheet1', index=False)
+# df = pd.DataFrame()
 
-# Close the Pandas Excel writer and output the Excel file.
-writer.close()
+# for i in range(len(keys)):
+#     df[keys[i]] = 0
+
+# df.loc[len(df)] = values
+
+# writer = pd.ExcelWriter('features-quality.xlsx', engine='xlsxwriter')
+
+# df.to_excel(writer, sheet_name='Sheet1', index=False)
+
+# writer.close()
