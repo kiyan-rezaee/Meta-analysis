@@ -6,7 +6,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\kiyan\Desktop\research code\code\papers\Joint latent topic models for text and citations.pdf",
+    r"C:\Users\kiyan\Desktop\research code\code\papers\Radlinski08AdRanking.pdf",
     'rb')
 
 quality = {
@@ -46,6 +46,7 @@ quality = {
     '["Low-cost deployability"]': "",
     '["simplicity"]': "",
     '["Extending access"]': "",
+    '["classification performance"]': "",
     '["robustness"]': "",
 }
 features = {
