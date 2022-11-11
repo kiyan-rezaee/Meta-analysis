@@ -6,7 +6,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\Characterizing context-aware recommender systems A systematic literature review.pdf",
+    r"C:\Users\kiyan\Desktop\research code\code\papers\p347-tan.pdf",
     'rb')
 
 quality = {
@@ -47,6 +47,9 @@ quality = {
     '["simplicity"]': "",
     '["Extending access"]': "",
     '["classification performance"]': "",
+    '["Classification accuracy"]': "",
+    '["Segment accuracy"]': "",
+    '["Query accuracy"]': "",
     '["robustness"]': "",
 }
 features = {
