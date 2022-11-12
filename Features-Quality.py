@@ -6,7 +6,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\saram\Desktop\19.pdf",
+    r"C:\Documents\Mehrshad\User Intent Modeling\Adaptive multi-attribute diversity for recommender systems.pdf",
     'rb')
 
 quality = {
@@ -50,6 +50,7 @@ quality = {
     '["Classification accuracy"]': "",
     '["Segment accuracy"]': "",
     '["Query accuracy"]': "",
+    '["Novelty"]': "",
     '["robustness"]': "",
 }
 features = {
