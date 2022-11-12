@@ -6,7 +6,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\saram\Desktop\17.pdf",
+    r"C:\Users\saram\Desktop\19.pdf",
     'rb')
 
 quality = {
@@ -156,6 +156,7 @@ features = {
     '["tail queries"]': "",
     '["TEXTUAL SIMILARITY"]': "",
     '["reading level"]': "",
+    '["intuition"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
