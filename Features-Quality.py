@@ -6,7 +6,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\saram\Desktop\21.pdf",
+    r"C:\Documents\Mehrshad\User Intent Modeling\Adapting topic map and social influence to the personalized hybrid recommender system.pdf",
     'rb')
 
 quality = {
@@ -126,7 +126,7 @@ features = {
     '["tag relevan","tag-relevan"]': "",
     '["Query Segmentation"]': "",
     '["name entity recognition"]': "",
-    '["part-of-speech tagging", "part of speech", "part-of-speech"]': "",
+    '["part-of-speech", "part of speech"]': "",
     '["word cluster","word-cluster"]': "",
     '["click through", "click-through"]': "",
     '["vertical intent", "vertical-intent"]': "",
@@ -164,6 +164,11 @@ features = {
     '["Logic-based","Logic based","logical"]': "",
     '["reading level"]': "",
     '["intuition"]': "",
+    '["trust-based","trust based"]': "",
+    '["rule based","rule-based"]': "",
+    '["statistical tag"]': "",
+    '["principle component analysis"]': "",
+    '["retrieval-based","retrieval based"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
