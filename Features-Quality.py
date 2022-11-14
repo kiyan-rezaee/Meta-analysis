@@ -6,7 +6,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\saram\Desktop\22.pdf",
+    r"C:\Documents\Mehrshad\User Intent Modeling\Search engine marketing is not all gold Insights from Twitter and SEOClerks.pdf",
     'rb')
 
 quality = {
@@ -170,6 +170,7 @@ features = {
     '["principle component analysis"]': "",
     '["keyword based","keyword-based]': "",
     '["retrieval-based","retrieval based"]': "",
+    '["hashtag analys"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
