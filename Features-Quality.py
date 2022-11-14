@@ -168,7 +168,7 @@ features = {
     '["rule based","rule-based"]': "",
     '["statistical tag"]': "",
     '["principle component analysis"]': "",
-    '["keyword based","keyword-based]': "",
+    '["keyword based","keyword-based"]': "",
     '["retrieval-based","retrieval based"]': "",
     '["hashtag analys"]': "",
     '["Inverse Document Frequency"]': "",
