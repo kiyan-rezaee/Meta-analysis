@@ -52,6 +52,7 @@ quality = {
     '["Query accuracy"]': "",
     '["Novelty"]': "",
     '["Portability"]': "",
+    '["retrieval performance"]': "",
     '["robustness"]': "",
 }
 features = {
