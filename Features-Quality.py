@@ -173,6 +173,7 @@ features = {
     '["retrieval-based","retrieval based"]': "",
     '["hashtag analys"]': "",
     '["semantic analysis"]': "",
+    '["data-intensive","data intensive"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
