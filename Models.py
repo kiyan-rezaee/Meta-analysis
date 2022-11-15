@@ -44,7 +44,8 @@ models = [
     'DLA', 'NMF', 'ConvMF', 'DeepCoNN', 'SAT', 'Att2Seq', 'ResNet', 'QRFA',
     'CIR6', 'MDP', 'AEM', 'TEM', 'LSE', 'PPWE', 'PWEBA', 'UserKNN', 'TOP',
     'HRM', 'HTMM', 'RANDOM', 'MCoC', 'MART', 'SERP', 'Rocchio', 'Perturbation',
-    'SingleNeg', 'MultiNeg', 'GPR', 'SVR', 'AgeRank', 'K-NNG', 'co-training', 'self-training', 'LSI'
+    'SingleNeg', 'MultiNeg', 'GPR', 'SVR', 'AgeRank', 'K-NNG', 'co-training', 'self-training', 'LSI',
+    'WCN'
 ]
 
 ls = ['' for i in range(len(models))]
