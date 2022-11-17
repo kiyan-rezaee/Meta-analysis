@@ -54,7 +54,6 @@ quality = {
     '["Portability"]': "",
     '["retrieval performance"]': "",
     '["familiarity"]': "",
-    '["Satisfaction"]': "",
     '["robustness"]': "",
 }
 features = {
