@@ -6,7 +6,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"",
+    r"C:\Users\kiyan\Desktop\research code\code\papers\j.knosys.2016.03.027.pdf",
     'rb')
 
 quality = {
@@ -54,7 +54,6 @@ quality = {
     '["Portability"]': "",
     '["retrieval performance"]': "",
     '["familiarity"]': "",
-    '["Satisfaction"]': "",
     '["robustness"]': "",
 }
 features = {
