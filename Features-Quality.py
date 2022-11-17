@@ -176,6 +176,7 @@ features = {
     '["semantic analysis"]': "",
     '["data-intensive","data intensive"]': "",
     '["feature-orient","feature orient"]': "",
+    '["graph ranking","graph-ranking"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
