@@ -55,6 +55,10 @@ quality = {
     '["retrieval performance"]': "",
     '["familiarity"]': "",
     '["robustness"]': "",
+    '["Felt Involvement"]': "",
+    '["Focused Attention"]': "",
+    '["Perceived Usability"]': "",
+    '["Endurability"]': "",
 }
 features = {
     '["Text based", "Text-based"]': "",
