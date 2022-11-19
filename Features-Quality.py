@@ -181,6 +181,7 @@ features = {
     '["feature-orient","feature orient"]': "",
     '["graph ranking","graph-ranking"]': "",
     '["neighborhood-based","neighborhood based"]': "",
+    '["query expansion"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
