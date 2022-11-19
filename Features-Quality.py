@@ -54,11 +54,11 @@ quality = {
     '["Portability"]': "",
     '["retrieval performance"]': "",
     '["familiarity"]': "",
-    '["robustness"]': "",
     '["Felt Involvement"]': "",
     '["Focused Attention"]': "",
     '["Perceived Usability"]': "",
     '["Endurability"]': "",
+    '["robustness"]': "",
 }
 features = {
     '["Text based", "Text-based"]': "",
