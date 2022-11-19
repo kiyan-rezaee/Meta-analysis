@@ -1,12 +1,11 @@
 from optparse import Values
 import pandas as pd
 import PyPDF2
-#pip install pyperclip (vase copy kardan)
 import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\saram\Desktop\1.pdf",
+    r"",
     'rb')
 
 quality = {
@@ -181,6 +180,7 @@ features = {
     '["data-intensive","data intensive"]': "",
     '["feature-orient","feature orient"]': "",
     '["graph ranking","graph-ranking"]': "",
+    '["neighborhood-based","neighborhood based"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
