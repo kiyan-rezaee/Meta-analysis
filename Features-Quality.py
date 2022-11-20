@@ -5,7 +5,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"",
+    r"C:\Documents\Mehrshad\User Intent Modeling\1.pdf",
     'rb')
 
 quality = {
@@ -225,28 +225,13 @@ for key, col in zip(featuresandquality, range(9999)):
         print(f"{excelCol(col)}: {eval(key)[0]}")
     keys.append(key)
     values.append(featuresandquality[key])
-
+    
 for i in range(len(quality)):
     if values[i] == "X":
-        if i == '["Computational cost"]':
+        if i == list(quality.keys()).index('["Computational cost"]'):
             values[i] = "Low"
         else:
             values[i] = "High"
 
 pyperclip.copy('\t'.join(values))
 print('Copied to clipboard!')
-
-# pdfFileObj.close()
-
-# df = pd.DataFrame()
-
-# for i in range(len(keys)):
-#     df[keys[i]] = 0
-
-# df.loc[len(df)] = values
-
-# writer = pd.ExcelWriter('features-quality.xlsx', engine='xlsxwriter')
-
-# df.to_excel(writer, sheet_name='Sheet1', index=False)
-
-# writer.close()
