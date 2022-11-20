@@ -181,7 +181,9 @@ features = {
     '["feature-orient","feature orient"]': "",
     '["graph ranking","graph-ranking"]': "",
     '["neighborhood-based","neighborhood based"]': "",
+    '["feature weighting","feature-weighting"]': "",
     '["query expansion"]': "",
+    '["Lexicon-Based","Lexicon Based"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
@@ -226,7 +228,10 @@ for key, col in zip(featuresandquality, range(9999)):
 
 for i in range(len(quality)):
     if values[i] == "X":
-        values[i] = "High"
+        if i == '["Computational cost"]':
+            values[i] = "Low"
+        else:
+            values[i] = "High"
 
 pyperclip.copy('\t'.join(values))
 print('Copied to clipboard!')
