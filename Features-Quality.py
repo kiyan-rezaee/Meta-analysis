@@ -5,7 +5,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\1.pdf",
+    r"C:\Users\saram\Desktop\2.pdf",
     'rb')
 
 quality = {
