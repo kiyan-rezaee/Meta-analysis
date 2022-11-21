@@ -5,7 +5,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\.pdf",
+    r"",
     'rb')
 
 quality = {
@@ -66,7 +66,7 @@ features = {
     '["Single ratings"]': "",
     '["multi-type entities"]': "",
     '["Prediction", "predict"]': "",
-    '["Multi lingual", "Multi lingual", "Multi-lingual"]': "",
+    '["Multi lingual", "Multi lingual", "Multi-lingual", "Multilingual"]': "",
     '["Historical data", "data history", "search histories", "history"]': "",
     '["Filter"]': "",
     '["behavior"]': "",
