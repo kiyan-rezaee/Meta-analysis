@@ -5,7 +5,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Documents\Mehrshad\User Intent Modeling\1.pdf",
+    r"C:\Documents\Mehrshad\User Intent Modeling\.pdf",
     'rb')
 
 quality = {
@@ -184,6 +184,7 @@ features = {
     '["feature weighting","feature-weighting"]': "",
     '["query expansion"]': "",
     '["Lexicon-Based","Lexicon Based"]': "",
+    '["pseudo-relevance feedback"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
@@ -225,7 +226,7 @@ for key, col in zip(featuresandquality, range(9999)):
         print(f"{excelCol(col)}: {eval(key)[0]}")
     keys.append(key)
     values.append(featuresandquality[key])
-    
+
 for i in range(len(quality)):
     if values[i] == "X":
         if i == list(quality.keys()).index('["Computational cost"]'):
