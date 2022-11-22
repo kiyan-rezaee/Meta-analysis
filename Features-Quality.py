@@ -5,7 +5,7 @@ import pyperclip
 
 # creating a pdf file object
 pdfFileObj = open(
-    r"",
+    r"C:\Users\kiyan\Desktop\research code\code\papers\j.knosys.2015.11.002.pdf",
     'rb')
 
 quality = {
@@ -185,6 +185,10 @@ features = {
     '["query expansion"]': "",
     '["Lexicon-Based","Lexicon Based"]': "",
     '["pseudo-relevance feedback"]': "",
+    '["Content-Based Filtering", "content based filtering"]': "",
+    '["Recommendation based On Typicality"]': "",
+    '["Model-based", "model based"]': "",
+    '["Memory-based approaches"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
