@@ -3,10 +3,15 @@ import pandas as pd
 import PyPDF2
 import pyperclip
 
+# set your path here and change the name below
+kiyan=r"C:\Users\kiyan\Desktop\research code\code\papers\j.knosys.2015.11.002.pdf"
+sara = r"C:\Users\saram\Desktop\10.pdf"
+morteza=r""
+mehrshad = r"C:\Documents\Mehrshad\User Intent Modeling\Collaborative filtering with social regularization for TV program recommendation.pdf"
+
 # creating a pdf file object
 pdfFileObj = open(
-    r"C:\Users\kiyan\Desktop\research code\code\papers\j.knosys.2015.11.002.pdf",
-    r"C:\Users\saram\Desktop\10.pdf",
+    mehrshad,
     'rb')
 
 quality = {
@@ -189,7 +194,7 @@ features = {
     '["Content-Based Filtering", "content based filtering"]': "",
     '["Recommendation based On Typicality"]': "",
     '["Model-based", "model based"]': "",
-    '["Memory-based approaches"]': "",
+    '["Memory-based","memory based"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
