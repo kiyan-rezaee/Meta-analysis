@@ -193,6 +193,7 @@ features = {
     '["Recommendation based On Typicality"]': "",
     '["Model-based", "model based"]': "",
     '["Memory-based","memory based"]': "",
+    '["Item similarity","Item-similarity","Item to Item Similarity"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"qualities count: {len(quality)}")
