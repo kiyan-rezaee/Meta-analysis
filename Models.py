@@ -45,7 +45,7 @@ models = [
     'CIR6', 'MDP', 'AEM', 'TEM', 'LSE', 'PPWE', 'PWEBA', 'UserKNN', 'TOP',
     'HRM', 'HTMM', 'RANDOM', 'MCoC', 'MART', 'SERP', 'Rocchio', 'Perturbation',
     'SingleNeg', 'MultiNeg', 'GPR', 'SVR', 'AgeRank', 'K-NNG', 'co-training', 'self-training', 'LSI',
-    'WCN', 'avgPerceptron', 'average perceptron', 'IA-Select'
+    'WCN', 'avgPerceptron', 'average perceptron', 'IA-Select', 'TCRF', 'HMRF'
 ]
 
 ls = ['' for i in range(len(models))]
