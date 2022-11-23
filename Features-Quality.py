@@ -10,7 +10,7 @@ morteza = r""
 mehrshad = r"C:\Documents\Mehrshad\User Intent Modeling\Collaborative filtering with social regularization for TV program recommendation.pdf"
 
 # creating a pdf file object
-pdfFileObj = open(mehrshad, 'rb')
+pdfFileObj = open(sara, 'rb')
 
 quality = {
     '["Performance"]': "",
