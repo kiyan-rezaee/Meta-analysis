@@ -1,4 +1,5 @@
 from optparse import Values
+from Shortcut import shortcut as s
 import pandas as pd
 import PyPDF2
 import pyperclip
@@ -7,10 +8,12 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\j.knosys.2015.11.002.pdf"
 sara = r"C:\Users\saram\Desktop\12.pdf"
 morteza = r""
-mehrshad = r"C:\Documents\Mehrshad\User Intent Modeling\Collaborative filtering with social regularization for TV program recommendation.pdf"
+mehrshad = s(
+    "Application of text mining techniques to the analysis of discourse in eWOM communications from a gender perspective"
+)
 
 # creating a pdf file object
-pdfFileObj = open(sara, 'rb')
+pdfFileObj = open(mehrshad, 'rb')
 
 quality = {
     '["Performance"]': "",
@@ -61,6 +64,9 @@ quality = {
     '["Focused Attention"]': "",
     '["Perceived Usability"]': "",
     '["Endurability"]': "",
+    '["Aboutness"]': "",
+    '["Coverage"]': "",
+    '["Appropriateness"]': "",
     '["robustness"]': "",
 }
 features = {
@@ -196,8 +202,8 @@ features = {
     '["Item similarity","Item-similarity","Item to Item Similarity"]': "",
     '["Inverse Document Frequency"]': "",
 }
-print(f"qualities count: {len(quality)}")
-print(f"features count: {len(features)}")
+print(f"Qualities count: {len(quality)}")
+print(f"Features count: {len(features)}")
 featuresandquality = quality.copy()
 featuresandquality.update(features)
 
@@ -230,7 +236,12 @@ def excelCol(num):
             return chr(n + ord('A') - 1) + result
 
 
+print('\nQUALITIES:')
+flag = True
 for key, col in zip(featuresandquality, range(9999)):
+    if col > len(quality.keys()) and flag:
+        flag = False
+        print('\nFEATURES:')
     if featuresandquality[key] == 'X':
         print(f"{excelCol(col)}: {eval(key)[0]}")
     keys.append(key)
@@ -244,4 +255,4 @@ for i in range(len(quality)):
             values[i] = "High"
 
 pyperclip.copy('\t'.join(values))
-print('Copied to clipboard!')
+print('\nCopied to clipboard!')
