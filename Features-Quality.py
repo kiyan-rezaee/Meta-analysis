@@ -1,5 +1,5 @@
 from optparse import Values
-from Shortcut import shortcut as s
+from Shortcut import shortcut
 import pandas as pd
 import PyPDF2
 import pyperclip
@@ -8,7 +8,7 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\j.knosys.2015.11.002.pdf"
 sara = r"C:\Users\saram\Desktop\12.pdf"
 morteza = r""
-mehrshad = s(
+mehrshad = shortcut(
     "Application of text mining techniques to the analysis of discourse in eWOM communications from a gender perspective"
 )
 
