@@ -67,6 +67,7 @@ quality = {
     '["Aboutness"]': "",
     '["Coverage"]': "",
     '["Appropriateness"]': "",
+    '["run-time efficiency", "runtime efficiency"]': "",
     '["robustness"]': "",
 }
 features = {
