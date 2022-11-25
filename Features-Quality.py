@@ -8,9 +8,9 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\j.knosys.2015.11.002.pdf"
 sara = r"C:\Users\saram\Desktop\17.pdf"
 morteza = r""
-#mehrshad = shortcut(
-#    "Application of text mining techniques to the analysis of discourse in eWOM communications from a gender perspective"
-#)
+mehrshad = shortcut(
+    "Application of text mining techniques to the analysis of discourse in eWOM communications from a gender perspective"
+)
 
 # creating a pdf file object
 pdfFileObj = open(sara, 'rb')
