@@ -9,11 +9,10 @@ kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\j.knosys.2015.11.002.
 sara = r"C:\Users\saram\Desktop\17.pdf"
 morteza = r""
 mehrshad = shortcut(
-    "Application of text mining techniques to the analysis of discourse in eWOM communications from a gender perspective"
-)
+    "A Deep Look into neural ranking models for information retrieval")
 
 # creating a pdf file object
-pdfFileObj = open(sara, 'rb')
+pdfFileObj = open(mehrshad, 'rb')
 
 quality = {
     '["Performance"]': "",
@@ -201,6 +200,14 @@ features = {
     '["Model-based", "model based"]': "",
     '["Memory-based","memory based"]': "",
     '["Item similarity","Item-similarity","Item to Item Similarity"]': "",
+    '["Multi granularity","Multi-granularity","Multigranularity"]': "",
+    '["Interaction-focused","Interaction focused"]': "",
+    '["Short-term history"]': "",
+    '["Long-term history"]': "",
+    '["Situational context"]': "",
+    '["Query split"]': "",
+    '["Document split"]': "",
+    '["Joint split"]': "",
     '["Inverse Document Frequency"]': "",
 }
 print(f"Qualities count: {len(quality)}")
