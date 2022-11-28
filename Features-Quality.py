@@ -8,9 +8,7 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\j.ipm.2018.04.004.pdf"
 sara = r"C:\Users\saram\Desktop\17.pdf"
 morteza = r""
-mehrshad = shortcut(
-    "Recommendation system exploiting aspect-based opinion mining with deep learning method"
-)
+mehrshad = shortcut("A utility-based news recommendation system")
 
 # creating a pdf file object
 pdfFileObj = open(mehrshad, 'rb')
@@ -181,7 +179,7 @@ features = {
     '["reading level"]': "",
     '["intuition"]': "",
     '["trust-based","trust based"]': "",
-    '["rule based","rule-based"]': "",
+    '["rule based","rule-based","rules based","rules-based"]': "",
     '["statistical tag"]': "",
     '["principle component analysis"]': "",
     '["keyword based","keyword-based"]': "",
@@ -214,6 +212,9 @@ features = {
     '["tensor factorization","tensor-factorization"]': "",
     '["frequency based","frequency-based"]': "",
     '["Sequence labeling"]': "",
+    '["Utility-based","Utility based"]': "",
+    '["goal based","goal-based"]': "",
+    '["hybrid"]': "",
     '["Query extraction"]': "",
 }
 print(f"Qualities count: {len(quality)}")
