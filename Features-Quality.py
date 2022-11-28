@@ -5,14 +5,14 @@ import PyPDF2
 import pyperclip
 
 # set your path here and change the name below
-kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\j.knosys.2015.11.002.pdf"
+kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\j.ipm.2018.04.004.pdf"
 sara = r"C:\Users\saram\Desktop\17.pdf"
 morteza = r""
-mehrshad = shortcut(
-    "A Deep Look into neural ranking models for information retrieval")
+# mehrshad = shortcut(
+#     "A Deep Look into neural ranking models for information retrieval")
 
 # creating a pdf file object
-pdfFileObj = open(mehrshad, 'rb')
+pdfFileObj = open(kiyan, 'rb')
 
 quality = {
     '["Performance"]': "",
@@ -209,6 +209,7 @@ features = {
     '["Document split"]': "",
     '["Joint split"]': "",
     '["Inverse Document Frequency"]': "",
+    '["Query extraction"]': "",
 }
 print(f"Qualities count: {len(quality)}")
 print(f"Features count: {len(features)}")
