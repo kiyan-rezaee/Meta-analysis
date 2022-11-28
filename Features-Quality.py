@@ -8,11 +8,12 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\j.ipm.2018.04.004.pdf"
 sara = r"C:\Users\saram\Desktop\17.pdf"
 morteza = r""
-# mehrshad = shortcut(
-#     "A Deep Look into neural ranking models for information retrieval")
+mehrshad = shortcut(
+    "Recommendation system exploiting aspect-based opinion mining with deep learning method"
+)
 
 # creating a pdf file object
-pdfFileObj = open(kiyan, 'rb')
+pdfFileObj = open(mehrshad, 'rb')
 
 quality = {
     '["Performance"]': "",
@@ -209,6 +210,10 @@ features = {
     '["Document split"]': "",
     '["Joint split"]': "",
     '["Inverse Document Frequency"]': "",
+    '["Ratings Prediction","Ratings-Prediction","Rating Prediction","Rating-Prediction"]': "",
+    '["tensor factorization","tensor-factorization"]': "",
+    '["frequency based","frequency-based"]': "",
+    '["Sequence labeling"]': "",
     '["Query extraction"]': "",
 }
 print(f"Qualities count: {len(quality)}")
