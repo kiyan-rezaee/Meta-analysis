@@ -5,13 +5,13 @@ import PyPDF2
 import pyperclip
 
 # set your path here and change the name below
-kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\j.ipm.2018.04.004.pdf"
+kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\742.pdf"
 sara = r"C:\Users\saram\Desktop\21.pdf"
 morteza = r""
 mehrshad = shortcut(603)
 
 # creating a pdf file object
-pdfFileObj = open(mehrshad, 'rb')
+pdfFileObj = open(kiyan, 'rb')
 
 quality = {
     '["Performance"]': "",
@@ -366,6 +366,14 @@ features = {
     '["hybrid"]':
     "",
     '["query rewriting", "query-rewriting"]':
+    "",
+    '["SoVAE"]':
+    "",
+    '["Multi-VAE"]':
+    "",
+    '["RecVAE"]':
+    "",
+    '["EVCF"]':
     "",
     '["Query extraction"]':
     "",
