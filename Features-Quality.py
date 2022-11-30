@@ -365,6 +365,8 @@ features = {
     "",
     '["hybrid"]':
     "",
+    '["query rewriting", "query-rewriting"]':
+    "",
     '["Query extraction"]':
     "",
 }
