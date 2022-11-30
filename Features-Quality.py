@@ -8,10 +8,10 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\j.ipm.2018.04.004.pdf"
 sara = r"C:\Users\saram\Desktop\21.pdf"
 morteza = r""
-#mehrshad = shortcut("A utility-based news recommendation system")
+mehrshad = shortcut(603)
 
 # creating a pdf file object
-pdfFileObj = open(sara, 'rb')
+pdfFileObj = open(mehrshad, 'rb')
 
 quality = {
     '["Performance"]': "",
@@ -69,153 +69,304 @@ quality = {
     '["robustness"]': "",
 }
 features = {
-    '["Text based", "Text-based"]': "",
-    '["Rank"]': "",
-    '["Multi-criteria ratings"]': "",
-    '["Single ratings"]': "",
-    '["multi-type entities"]': "",
-    '["Prediction", "predict"]': "",
-    '["Multi lingual", "Multi lingual", "Multi-lingual", "Multilingual"]': "",
-    '["Historical data", "data history", "search histories", "history"]': "",
-    '["Filter"]': "",
-    '["behavior"]': "",
-    '["graph based","graph-based", "graph"]': "",
-    '["relevance-based", "relevant"]': "",
-    '["Community Question Answering"]': "",
-    '["Unlabeled data"]': "",
-    '["Objective Questions"]': "",
-    '["Clarifying Question"]': "",
-    '["Subjective Questions"]': "",
-    '["Item recommendation"]': "",
-    '["Pre-trained Model"]': "",
-    '["Vertical search engines"]': "",
-    '["Text similarity", "text-similarity"]': "",
-    '["colour similarity","color similarity"]': "",
-    '["Topic similarity","Topic-similarity"]': "",
-    '["Rating behaviors"]': "",
-    '["Topic Model"]': "",
-    '["user-oriented topics"]': "",
-    '["time-oriented topics"]': "",
-    '["data sparseness"]': "",
-    '["Language model"]': "",
-    '["Context-aware","Context aware"]': "",
-    '["asynchronous training"]': "",
-    '["network architecture"]': "",
-    '["optimization perspective"]': "",
-    '["feature perspective"]': "",
-    '["generative"]': "",
-    '["machine reading comprehension"]': "",
-    '["Quality control"]': "",
-    '["query scoping"]': "",
-    '["colour representation","color representation"]': "",
-    '["co-occurrence"]': "",
-    '["Adaptive Weights"]': "",
-    '["Smoothing"]': "",
-    '["Social Questions"]': "",
-    '["Term Frequency"]': "",
-    '["Sampling based"]': "",
-    '["Query-based"]': "",
-    '["lexical items"]': "",
-    '["sponsored search"]': "",
-    '["navigational"]': "",
-    '["informational"]': "",
-    '["transactional"]': "",
-    '["Alleviating data sparsity"]': "",
-    '["Heuristic" , "Ranking Heuristic"]': "",
-    '["query refinement"]': "",
-    '["Partitional"]': "",
-    '["Density-Based","Density Based"]': "",
-    '["Pruning"]': "",
-    '["Negative feedback"]': "",
-    '["topic coverage"]': "",
-    '["search goal","search task"]': "",
-    '["Search trail"]': "",
-    '["labeled data"]': "",
-    '["commercial queries"]': "",
-    '["Query Suggestions"]': "",
-    '["Empirically"]': "",
-    '["Weight"]': "",
-    '["Query privacy","Query-privacy"]': "",
-    '["sophisticated"]': "",
-    '["tag relevan","tag-relevan"]': "",
-    '["Query Segmentation"]': "",
-    '["name entity recognition"]': "",
-    '["part-of-speech", "part of speech"]': "",
-    '["word cluster","word-cluster"]': "",
-    '["click through", "click-through"]': "",
-    '["vertical intent", "vertical-intent"]': "",
-    '["image similarity"]': "",
-    '["geolocation"]': "",
-    '["end-to-end"]': "",
-    '["similarity computation","similarity-computation"]': "",
-    '["ambiguous queries"]': "",
-    '["Simulation-based"]': "",
-    '["Semantic interpretation"]': "",
-    '["Query independent", "Query independent", "Query independence"]': "",
-    '["stepwise"]': "",
-    '["time-based"]': "",
-    '["Semantic similarity","Semantic-similarity"]': "",
-    '["tag-based","tagbased","tag based"]': "",
-    '["content-based","content based"]': "",
-    '["algorithm-independent"]': "",
-    '["agnostic"]': "",
-    '["domain-independent"]': "",
-    '["underlying recommendation"]': "",
-    '["Rule-based Template Completion"]': "",
-    '["Modification", "Query Modifications"]': "",
-    '["Identical queries"]': "",
-    '["Query Overlap"]': "",
-    '["statistical methods"]': "",
-    '["contextual graph", "contextual diagram"]': "",
-    '["matrix factorization"]': "",
-    '["conceptual map"]': "",
-    '["tail queries"]': "",
-    '["TEXTUAL SIMILARITY"]': "",
-    '["Multidimensional","Multi-dimensional"]': "",
-    '["Activity"]': "",
-    '["Location-based","Location base"]': "",
-    '["Ontology"]': "",
-    '["Logic-based","Logic based","logical"]': "",
-    '["reading level"]': "",
-    '["intuition"]': "",
-    '["trust-based","trust based"]': "",
-    '["rule based","rule-based","rules based","rules-based"]': "",
-    '["statistical tag"]': "",
-    '["principle component analysis"]': "",
-    '["keyword based","keyword-based"]': "",
-    '["retrieval-based","retrieval based"]': "",
-    '["hashtag analys"]': "",
-    '["semantic analysis"]': "",
-    '["data-intensive","data intensive"]': "",
-    '["feature-orient","feature orient"]': "",
-    '["graph ranking","graph-ranking"]': "",
-    '["neighborhood-based","neighborhood based"]': "",
-    '["feature weighting","feature-weighting"]': "",
-    '["query expansion"]': "",
-    '["Lexicon-Based","Lexicon Based"]': "",
-    '["pseudo-relevance feedback"]': "",
-    '["Content-Based Filtering", "content based filtering"]': "",
-    '["Recommendation based On Typicality"]': "",
-    '["Model-based", "model based"]': "",
-    '["Memory-based","memory based"]': "",
-    '["Item similarity","Item-similarity","Item to Item Similarity"]': "",
-    '["Multi granularity","Multi-granularity","Multigranularity"]': "",
-    '["Interaction-focused","Interaction focused"]': "",
-    '["Short-term history"]': "",
-    '["Long-term history"]': "",
-    '["Situational context"]': "",
-    '["Query split"]': "",
-    '["Document split"]': "",
-    '["Joint split"]': "",
-    '["Inverse Document Frequency"]': "",
-    '["Ratings Prediction","Ratings-Prediction","Rating Prediction","Rating-Prediction"]': "",
-    '["tensor factorization","tensor-factorization"]': "",
-    '["frequency based","frequency-based"]': "",
-    '["Sequence labeling"]': "",
-    '["Utility-based","Utility based"]': "",
-    '["goal based","goal-based"]': "",
-    '["hybrid"]': "",
-    '["Query extraction"]': "",
+    '["Text based", "Text-based"]':
+    "",
+    '["Rank"]':
+    "",
+    '["Multi-criteria ratings"]':
+    "",
+    '["Single ratings"]':
+    "",
+    '["multi-type entities"]':
+    "",
+    '["Prediction", "predict"]':
+    "",
+    '["Multi lingual", "Multi lingual", "Multi-lingual", "Multilingual"]':
+    "",
+    '["Historical data", "data history", "search histories", "history"]':
+    "",
+    '["Filter"]':
+    "",
+    '["behavior"]':
+    "",
+    '["graph based","graph-based", "graph"]':
+    "",
+    '["relevance-based", "relevant"]':
+    "",
+    '["Community Question Answering"]':
+    "",
+    '["Unlabeled data"]':
+    "",
+    '["Objective Questions"]':
+    "",
+    '["Clarifying Question"]':
+    "",
+    '["Subjective Questions"]':
+    "",
+    '["Item recommendation"]':
+    "",
+    '["Pre-trained Model"]':
+    "",
+    '["Vertical search engines"]':
+    "",
+    '["Text similarity", "text-similarity"]':
+    "",
+    '["colour similarity","color similarity"]':
+    "",
+    '["Topic similarity","Topic-similarity"]':
+    "",
+    '["Rating behaviors"]':
+    "",
+    '["Topic Model"]':
+    "",
+    '["user-oriented topics"]':
+    "",
+    '["time-oriented topics"]':
+    "",
+    '["data sparseness"]':
+    "",
+    '["Language model"]':
+    "",
+    '["Context-aware","Context aware"]':
+    "",
+    '["asynchronous training"]':
+    "",
+    '["network architecture"]':
+    "",
+    '["optimization perspective"]':
+    "",
+    '["feature perspective"]':
+    "",
+    '["generative"]':
+    "",
+    '["machine reading comprehension"]':
+    "",
+    '["Quality control"]':
+    "",
+    '["query scoping"]':
+    "",
+    '["colour representation","color representation"]':
+    "",
+    '["co-occurrence"]':
+    "",
+    '["Adaptive Weights"]':
+    "",
+    '["Smoothing"]':
+    "",
+    '["Social Questions"]':
+    "",
+    '["Term Frequency"]':
+    "",
+    '["Sampling based"]':
+    "",
+    '["Query-based"]':
+    "",
+    '["lexical items"]':
+    "",
+    '["sponsored search"]':
+    "",
+    '["navigational"]':
+    "",
+    '["informational"]':
+    "",
+    '["transactional"]':
+    "",
+    '["Alleviating data sparsity"]':
+    "",
+    '["Heuristic" , "Ranking Heuristic"]':
+    "",
+    '["query refinement"]':
+    "",
+    '["Partitional"]':
+    "",
+    '["Density-Based","Density Based"]':
+    "",
+    '["Pruning"]':
+    "",
+    '["Negative feedback"]':
+    "",
+    '["topic coverage"]':
+    "",
+    '["search goal","search task"]':
+    "",
+    '["Search trail"]':
+    "",
+    '["labeled data"]':
+    "",
+    '["commercial queries"]':
+    "",
+    '["Query Suggestions"]':
+    "",
+    '["Empirically"]':
+    "",
+    '["Weight"]':
+    "",
+    '["Query privacy","Query-privacy"]':
+    "",
+    '["sophisticated"]':
+    "",
+    '["tag relevan","tag-relevan"]':
+    "",
+    '["Query Segmentation"]':
+    "",
+    '["name entity recognition"]':
+    "",
+    '["part-of-speech", "part of speech"]':
+    "",
+    '["word cluster","word-cluster"]':
+    "",
+    '["click through", "click-through"]':
+    "",
+    '["vertical intent", "vertical-intent"]':
+    "",
+    '["image similarity"]':
+    "",
+    '["geolocation"]':
+    "",
+    '["end-to-end"]':
+    "",
+    '["similarity computation","similarity-computation"]':
+    "",
+    '["ambiguous queries"]':
+    "",
+    '["Simulation-based"]':
+    "",
+    '["Semantic interpretation"]':
+    "",
+    '["Query independent", "Query independent", "Query independence"]':
+    "",
+    '["stepwise"]':
+    "",
+    '["time-based"]':
+    "",
+    '["Semantic similarity","Semantic-similarity"]':
+    "",
+    '["tag-based","tagbased","tag based"]':
+    "",
+    '["content-based","content based"]':
+    "",
+    '["algorithm-independent"]':
+    "",
+    '["agnostic"]':
+    "",
+    '["domain-independent"]':
+    "",
+    '["underlying recommendation"]':
+    "",
+    '["Rule-based Template Completion"]':
+    "",
+    '["Modification", "Query Modifications"]':
+    "",
+    '["Identical queries"]':
+    "",
+    '["Query Overlap"]':
+    "",
+    '["statistical methods"]':
+    "",
+    '["contextual graph", "contextual diagram"]':
+    "",
+    '["matrix factorization"]':
+    "",
+    '["conceptual map"]':
+    "",
+    '["tail queries"]':
+    "",
+    '["TEXTUAL SIMILARITY"]':
+    "",
+    '["Multidimensional","Multi-dimensional"]':
+    "",
+    '["Activity"]':
+    "",
+    '["Location-based","Location base"]':
+    "",
+    '["Ontology"]':
+    "",
+    '["Logic-based","Logic based","logical"]':
+    "",
+    '["reading level"]':
+    "",
+    '["intuition"]':
+    "",
+    '["trust-based","trust based"]':
+    "",
+    '["rule based","rule-based","rules based","rules-based"]':
+    "",
+    '["statistical tag"]':
+    "",
+    '["principle component analysis"]':
+    "",
+    '["keyword based","keyword-based"]':
+    "",
+    '["retrieval-based","retrieval based"]':
+    "",
+    '["hashtag analys"]':
+    "",
+    '["semantic analysis"]':
+    "",
+    '["data-intensive","data intensive"]':
+    "",
+    '["feature-orient","feature orient"]':
+    "",
+    '["graph ranking","graph-ranking"]':
+    "",
+    '["neighborhood-based","neighborhood based"]':
+    "",
+    '["feature weighting","feature-weighting"]':
+    "",
+    '["query expansion"]':
+    "",
+    '["Lexicon-Based","Lexicon Based"]':
+    "",
+    '["pseudo-relevance feedback"]':
+    "",
+    '["Content-Based Filtering", "content based filtering"]':
+    "",
+    '["Recommendation based On Typicality"]':
+    "",
+    '["Model-based", "model based"]':
+    "",
+    '["Memory-based","memory based"]':
+    "",
+    '["Item similarity","Item-similarity","Item to Item Similarity"]':
+    "",
+    '["Multi granularity","Multi-granularity","Multigranularity"]':
+    "",
+    '["Interaction-focused","Interaction focused"]':
+    "",
+    '["Short-term history"]':
+    "",
+    '["Long-term history"]':
+    "",
+    '["Situational context"]':
+    "",
+    '["Query split"]':
+    "",
+    '["Document split"]':
+    "",
+    '["Joint split"]':
+    "",
+    '["Inverse Document Frequency"]':
+    "",
+    '["Ratings Prediction","Ratings-Prediction","Rating Prediction","Rating-Prediction"]':
+    "",
+    '["tensor factorization","tensor-factorization"]':
+    "",
+    '["frequency based","frequency-based"]':
+    "",
+    '["Sequence labeling"]':
+    "",
+    '["Utility-based","Utility based"]':
+    "",
+    '["goal based","goal-based"]':
+    "",
+    '["image-based","image-aware"]':
+    "",
+    '["Representation learning"]':
+    "",
+    '["hybrid"]':
+    "",
+    '["Query extraction"]':
+    "",
 }
 print(f"Qualities count: {len(quality)}")
 print(f"Features count: {len(features)}")
