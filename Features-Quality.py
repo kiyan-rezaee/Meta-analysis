@@ -8,10 +8,10 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\742.pdf"
 sara = r"C:\Users\saram\Desktop\2.pdf"
 morteza = r""
-mehrshad = shortcut(603)
+mehrshad = shortcut(605)
 
 # creating a pdf file object
-pdfFileObj = open(sara, 'rb')
+pdfFileObj = open(mehrshad, 'rb')
 
 quality = {
     '["Performance"]': "",
@@ -366,14 +366,6 @@ features = {
     '["hybrid"]':
     "",
     '["query rewriting", "query-rewriting"]':
-    "",
-    '["SoVAE"]':
-    "",
-    '["Multi-VAE"]':
-    "",
-    '["RecVAE"]':
-    "",
-    '["EVCF"]':
     "",
     '["Query extraction"]':
     "",
