@@ -8,7 +8,7 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\742.pdf"
 sara = r"C:\Users\saram\Desktop\2.pdf"
 morteza = r""
-mehrshad = shortcut(605)
+mehrshad = shortcut(607)
 
 # creating a pdf file object
 pdfFileObj = open(mehrshad, 'rb')
@@ -222,6 +222,7 @@ features = [
     ["hybrid"],
     ["query rewriting", "query-rewriting"],
     ["probability-based", "probability based"],
+    ["semantic-based", "semantics-based"],
     ["Query extraction"],
 ]
 print(f"Qualities count: {len(quality)}")
