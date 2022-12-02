@@ -6,7 +6,7 @@ import pyperclip
 
 # set your path here and change the name below
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\742.pdf"
-sara = r"C:\Users\saram\Desktop\3.pdf"
+sara = r"C:\Users\saram\Desktop\5.pdf"
 morteza = r""
 #mehrshad = shortcut(607)
 
