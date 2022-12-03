@@ -8,10 +8,10 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\978-3-642-30284-8_9.pdf"
 sara = r"C:\Users\saram\Desktop\5.pdf"
 morteza = r""
-# mehrshad = shortcut(608)
+mehrshad = shortcut(610)
 
 # creating a pdf file object
-pdfFileObj = open(kiyan, 'rb')
+pdfFileObj = open(mehrshad, 'rb')
 
 quality = [
     ["Performance"],
@@ -67,6 +67,7 @@ quality = [
     ["Appropriateness"],
     ["run-time efficiency", "runtime efficiency"],
     ["Unexpectedness"],
+    ["Clarification"],
     ["robustness"],
 ]
 features = [
