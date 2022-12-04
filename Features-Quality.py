@@ -228,6 +228,7 @@ features = [
     ["spatiotemporal-aware", "spatiotemporal aware"],
     ["Pattern-based"],
     ["region-rating"],
+    ["evolutionary"],
     ["Query extraction"],
 ]
 print(f"Qualities count: {len(quality)}")
