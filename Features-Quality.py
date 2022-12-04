@@ -6,12 +6,12 @@ import pyperclip
 
 # set your path here and change the name below
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\978-3-642-30284-8_9.pdf"
-sara = r"C:\Users\saram\Desktop\5.pdf"
+sara = r"C:\Users\saram\Desktop\9.pdf"
 morteza = r""
 mehrshad = shortcut(610)
 
 # creating a pdf file object
-pdfFileObj = open(mehrshad, 'rb')
+pdfFileObj = open(sara, 'rb')
 
 quality = [
     ["Performance"],
