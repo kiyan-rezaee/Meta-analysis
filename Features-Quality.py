@@ -8,10 +8,10 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\978-3-642-30284-8_9.pdf"
 sara = r"C:\Users\saram\Desktop\9.pdf"
 morteza = r""
-mehrshad = shortcut(610)
+mehrshad = shortcut(613)
 
 # creating a pdf file object
-pdfFileObj = open(sara, 'rb')
+pdfFileObj = open(mehrshad, 'rb')
 
 quality = [
     ["Performance"],
@@ -229,6 +229,8 @@ features = [
     ["Pattern-based"],
     ["region-rating"],
     ["evolutionary"],
+    ["hierarchical cluster"],
+    ["emotion-aware", "emotion-base"],
     ["Query extraction"],
 ]
 print(f"Qualities count: {len(quality)}")
