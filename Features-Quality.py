@@ -231,6 +231,7 @@ features = [
     ["evolutionary"],
     ["hierarchical cluster"],
     ["emotion-aware", "emotion-base"],
+    ["Incremental Update"],
     ["Query extraction"],
 ]
 print(f"Qualities count: {len(quality)}")
