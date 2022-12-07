@@ -7,11 +7,11 @@ import pyperclip
 # set your path here and change the name below
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\978-3-642-30284-8_9.pdf"
 sara = r"C:\Users\saram\Desktop\9.pdf"
-morteza = r""
+morteza = r"../ATaxonomyOfWebSearch.pdf"
 mehrshad = shortcut(613)
 
 # creating a pdf file object
-pdfFileObj = open(mehrshad, 'rb')
+pdfFileObj = open(morteza, 'rb')
 
 quality = [
     ["Performance"],
@@ -232,6 +232,7 @@ features = [
     ["hierarchical cluster"],
     ["emotion-aware", "emotion-base"],
     ["Incremental Update"],
+    ["attentive", "attention mechanism", "neural attention"],
     ["Query extraction"],
 ]
 print(f"Qualities count: {len(quality)}")
