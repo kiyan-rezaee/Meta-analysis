@@ -8,10 +8,10 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\978-3-642-30284-8_9.pdf"
 sara = r"C:\Users\saram\Desktop\2.pdf"
 morteza = r"../ATaxonomyOfWebSearch.pdf"
-mehrshad = shortcut(613)
+mehrshad = shortcut(615)
 
 # creating a pdf file object
-pdfFileObj = open(sara, 'rb')
+pdfFileObj = open(mehrshad, 'rb')
 
 quality = [
     ["Performance"],
@@ -233,6 +233,8 @@ features = [
     ["emotion-aware", "emotion-base"],
     ["Incremental Update"],
     ["attentive", "attention mechanism", "neural attention"],
+    ["preference aggregation"],
+    ["score aggregation"],
     ["Query extraction"],
 ]
 print(f"Qualities count: {len(quality)}")
