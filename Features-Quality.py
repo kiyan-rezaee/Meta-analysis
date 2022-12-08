@@ -234,6 +234,7 @@ features = [
     ["Incremental Update"],
     ["attentive", "attention mechanism", "neural attention"],
     ["preference aggregation"],
+    ["VISUALLY-AWARE", "VISUALLY AWARE", "VISUAL-AWARE", "visual aware"],
     ["score aggregation"],
     ["Query extraction"],
 ]
