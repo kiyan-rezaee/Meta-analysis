@@ -8,10 +8,10 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\978-3-642-30284-8_9.pdf"
 sara = r"C:\Users\saram\Desktop\6.pdf"
 morteza = r"../ATaxonomyOfWebSearch.pdf"
-mehrshad = shortcut(615)
+mehrshad = shortcut(617)
 
 # creating a pdf file object
-pdfFileObj = open(sara, 'rb')
+pdfFileObj = open(mehrshad, 'rb')
 
 quality = [
     ["Performance"],
@@ -236,6 +236,17 @@ features = [
     ["preference aggregation"],
     ["VISUALLY-AWARE", "VISUALLY AWARE", "VISUAL-AWARE", "visual aware"],
     ["score aggregation"],
+    ["Rating-based"],
+    ["Case-based"],
+    ["Knowledge-based"],
+    ["Critiquing-based"],
+    ["Personality-based"],
+    ["Constraint-based"],
+    ["structure-based"],
+    ["template-based"],
+    ["Semantic Graph-Based"],
+    ["Tree Based", "Tree-Based"],
+    ["Multimodal", "Multi modal", "Multi-modal"],
     ["Query extraction"],
 ]
 print(f"Qualities count: {len(quality)}")
