@@ -8,7 +8,7 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\978-3-642-30284-8_9.pdf"
 sara = r"C:\Users\saram\Desktop\8.pdf"
 morteza = r"../ATaxonomyOfWebSearch.pdf"
-mehrshad = shortcut(621)
+mehrshad = shortcut(706)
 
 # creating a pdf file object
 pdfFileObj = open(mehrshad, 'rb')
@@ -249,6 +249,7 @@ features = [
     ["Multimodal", "Multi modal", "Multi-modal"],
     ["chunk-based", "Chunking"],
     ["Item diversified", "diversification"],
+    ["auto-suggest"],
     ["Query extraction"],
 ]
 print(f"Qualities count: {len(quality)}")
