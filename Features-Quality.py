@@ -6,7 +6,7 @@ import pyperclip
 
 # set your path here and change the name below
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\978-3-642-30284-8_9.pdf"
-sara = r"C:\Users\saram\Desktop\13.pdf"
+sara = r"C:\Users\saram\Desktop\16.pdf"
 morteza = r"../ATaxonomyOfWebSearch.pdf"
 mehrshad = shortcut(706)
 
@@ -68,6 +68,7 @@ quality = [
     ["run-time efficiency", "runtime efficiency"],
     ["Unexpectedness"],
     ["Clarification"],
+    ["scrutability"],
     ["robustness"],
 ]
 features = [
