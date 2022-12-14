@@ -7,11 +7,11 @@ import pyperclip
 # set your path here and change the name below
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\978-3-642-30284-8_9.pdf"
 sara = r"C:\Users\saram\Desktop\17.pdf"
-morteza = r"../ATaxonomyOfWebSearch.pdf"
+morteza = r"../1-s2.0-S0167923622000707-main.pdf"
 mehrshad = shortcut(706)
 
 # creating a pdf file object
-pdfFileObj = open(sara, 'rb')
+pdfFileObj = open(morteza, 'rb')
 
 quality = [
     ["Performance"],
@@ -251,6 +251,7 @@ features = [
     ["chunk-based", "Chunking"],
     ["Item diversified", "diversification"],
     ["auto-suggest"],
+    ["multi-objective", "multi objective"],
     ["Query extraction"],
 ]
 print(f"Qualities count: {len(quality)}")
