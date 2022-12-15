@@ -7,11 +7,11 @@ import pyperclip
 # set your path here and change the name below
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\978-3-642-30284-8_9.pdf"
 sara = r"C:\Users\saram\Desktop\17.pdf"
-morteza = r"../1-s2.0-S0167923622000707-main.pdf"
+morteza = r"../Community_aware_user_profile_enrichment.pdf"
 mehrshad = shortcut(717)
 
 # creating a pdf file object
-pdfFileObj = open(mehrshad, 'rb')
+pdfFileObj = open(morteza, 'rb')
 
 quality = [
     ["Performance"],
@@ -70,6 +70,7 @@ quality = [
     ["Clarification"],
     ["scrutability"],
     ["robustness"],
+    ["convergence", "convergent"],
 ]
 features = [
     ["Text based", "Text-based"],
