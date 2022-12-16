@@ -8,10 +8,10 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\978-3-642-30284-8_9.pdf"
 sara = r"C:\Users\saram\Desktop\17.pdf"
 morteza = r"../Community_aware_user_profile_enrichment.pdf"
-mehrshad = shortcut(717)
+mehrshad = shortcut(805)
 
 # creating a pdf file object
-pdfFileObj = open(morteza, 'rb')
+pdfFileObj = open(mehrshad, 'rb')
 
 quality = [
     ["Performance"],
@@ -254,14 +254,16 @@ features = [
     ["auto-suggest"],
     ["multi-objective", "multi objective"],
     ["gradient-based"],
+    ["time-aware"],
+    ["sequence-aware"],
     ["Query extraction"],
 ]
 print(f"Qualities count: {len(quality)}")
 print(f"Features count: {len(features)}")
 quality = dict(
-    zip([str(i) for i in quality], ["" for i in range(len(quality))]))
+    zip([str(i) for i in quality], [""] * len(quality)))
 features = dict(
-    zip([str(i) for i in features], ["" for i in range(len(features))]))
+    zip([str(i) for i in features], [""] * len(features)))
 featuresandquality = quality.copy()
 featuresandquality.update(features)
 
