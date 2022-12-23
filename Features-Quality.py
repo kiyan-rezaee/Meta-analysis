@@ -69,6 +69,7 @@ quality = [
     ["Unexpectedness"],
     ["Clarification"],
     ["scrutability"],
+    ["memory-efficient", "memory efficient", "memory efficiency", "memory-efficiency"],
     ["robustness"],
     ["convergence", "convergent"],
 ]
