@@ -8,7 +8,7 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\1611.03971.pdf"
 sara = r"C:\Users\saram\Desktop\26.pdf"
 morteza = r"../Community_aware_user_profile_enrichment.pdf"
-mehrshad = shortcut(811)
+mehrshad = shortcut(813)
 
 # creating a pdf file object
 pdfFileObj = open(mehrshad, 'rb')
@@ -262,6 +262,7 @@ features = [
     ["database compression"],
     ["Stemming"],
     ["lemmatization", 'Lemmatisation'],
+    ["word embedding"],
     ["Age Detection"],
 ]
 print(f"Qualities count: {len(quality)}")
