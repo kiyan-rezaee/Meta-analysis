@@ -263,6 +263,7 @@ features = [
     ["Stemming"],
     ["lemmatization", 'Lemmatisation'],
     ["word embedding"],
+    ["opinion mining", "opinion-mining", "mine opinion"],
     ["Age Detection"],
 ]
 print(f"Qualities count: {len(quality)}")
