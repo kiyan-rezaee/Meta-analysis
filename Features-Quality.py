@@ -8,10 +8,10 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\1312.1611.pdf"
 sara = r"C:\Users\saram\Desktop\10.pdf"
 morteza = r"../Community_aware_user_profile_enrichment.pdf"
-mehrshad = shortcut(910)
+mehrshad = shortcut(922)
 
 # creating a pdf file object
-pdfFileObj = open(kiyan, 'rb')
+pdfFileObj = open(mehrshad, 'rb')
 
 quality = [
     ["Performance"],
@@ -274,6 +274,11 @@ features = [
     ["Session-based", "Session based"],
     ["Trust‑embedded", "Trusted embedded", "embedded trust", "embedded-trust"],
     ["wrapper-based", "wrapper based"],
+    ["Relation extraction"],
+    ["Rule‑based relation extraction"],
+    ["Feature‑based relation extraction"],
+    ["Statistical-based"],
+    ["Discourse-based"],
     ["Age Detection"],
 ]
 print(f"Qualities count: {len(quality)}")
