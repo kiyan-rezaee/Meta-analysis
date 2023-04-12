@@ -1,6 +1,7 @@
 import os
 import PyPDF2
 import logging
+import pyperclip
 
 # https://drive.google.com/drive/folders/1iTaI_bIe47RtjtPg7FDWDPHYIB3G2fvo?usp=sharing
 
@@ -21,5 +22,6 @@ for filename in os.listdir(folderPath):
         # print(txt)
         # print(title in txt)
         if title.lower().replace(' ', '').replace('\n', '') in txt:
-            print(f"found:\n{filename[:-4]}")
+            print(f"found:\n{filename}")
+            pyperclip.copy(filename[:-4])
             exit()
