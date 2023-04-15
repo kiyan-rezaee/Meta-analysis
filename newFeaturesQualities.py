@@ -6,7 +6,7 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\1312.1611.pdf"
 sara = r"C:\Users\saram\Desktop\10.pdf"
 morteza = r"../unige_102091_attachment01.pdf"
-mehrshad = shortcut(1038)
+mehrshad = shortcut(1053)
 
 # creating a pdf file object
 pdfFileObj = open(mehrshad, 'rb')
@@ -58,8 +58,8 @@ quality = [
 features = [
     ['Ranking'],
     ['Prediction'],
-    ['behavior-based'],
-    ['graph based'],
+    ['behavior-based', 'behavior based'],
+    ['graph based', 'graph-based'],
     ['Term Weighting'],
     ['Historical data'],
     ['Topic Modeling'],
@@ -102,10 +102,10 @@ features = [
     ['neighborhood-based'],
     ['Search trail'],
     ['time-aware'],
-    ['Tree Based'],
+    ['Tree Based', 'Tree-Based'],
     ['opinion mining'],
     ['Density-Based'],
-    ['Sampling based'],
+    ['Sampling based', 'Sampling-based'],
     ['positive relevance feedback'],
     ['graph ranking'],
     ['image-based'],
@@ -174,7 +174,7 @@ def excelCol(num):
 print('\nQUALITIES:')
 flag = True
 for key, col in zip(featuresandquality, range(9999)):
-    if col > len(quality.keys()) and flag:
+    if col >= len(quality.keys()) and flag:
         flag = False
         print('\nFEATURES:')
     if featuresandquality[key] == 'X':
