@@ -3,7 +3,7 @@
 
 def shortcut(fname, name='mehrshad', form='.pdf'):
     if name == 'mehrshad':
-        path = r"C:\Documents\Mehrshad\User Intent Modeling"
+        path = r"C:\Documents\Mehrshad\User Intent Modeling\9th Part (1038-1068)"
     return path + '\\' + str(fname) + form
 
 

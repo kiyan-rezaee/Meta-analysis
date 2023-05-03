@@ -6,9 +6,9 @@ import pyperclip
 # https://drive.google.com/drive/folders/1iTaI_bIe47RtjtPg7FDWDPHYIB3G2fvo?usp=sharing
 
 # Set the folder path where the PDF files are located
-folderPath = r'C:\Documents\Mehrshad\User Intent Modeling\farshidi'
+folderPath = r'C:\Documents\Mehrshad\User Intent Modeling\9th Part (1038-1068)'
 # Set the search string
-title = 'Goal-oriented conditional variational autoencoders for proactive and knowledge-aware conversational recommender system'
+title = 'Conversational artificial intelligence in the AEC industry: A review of present status, challenges and opportunities'
 
 logging.getLogger('PyPDF2').setLevel(logging.CRITICAL)
 # Loop through each file in the folder
