@@ -1,66 +1,72 @@
-from Shortcut import shortcut
+import os
 import PyPDF2
 import pyperclip
 
-# set your path here and change the name below
-kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\1312.1611.pdf"
-sara = r"C:\Users\saram\Desktop\10.pdf"
-morteza = r"../unige_102091_attachment01.pdf"
+# folder path
+kiyan = r""
+sara = r""
+morteza = r""
+amirhossein = r""
+mehrshad = r"C:\Documents\Mehrshad\User Intent Modeling"
 
-features = [['Graph Gener'], ['Image recogn'], ['Transformer'],
-            ['Multi-task', "Multitask"], ['Parameter estim'],
-            ['Anomaly detect'], ['Dimensionality reduct'], ['Feature Select']]
-# features = [["Ranking"], ["Prediction"], ["Session-based Recommendations"],
-#             ["graph generation"], ["Term Weighting"],
-#             ["Historical Data-Driven Recommendations"], ["Topic Modeling"],
-#             ["content-based Recommendations"], ["User Interaction"],
-#             ["Filtering"], ["Generative model"],
-#             ["Activity-Based Recommendations"], ["hybrid recommendation"],
-#             ["Co-Occurrence Analysis"], ["semantic analysis"], ["Model-based"],
-#             ["Context-aware Recommendations"], ["Query-based"],
-#             ["text similarity"], ["Smoothing"],
-#             ["Click-through Recommendations"], ["rule-based tagging"],
-#             ["Language Diversity"], ["Item recommendation"],
-#             ["Data Dimensionality"], ["Word cluster"],
-#             ["Geographic Support Recommendations"], ["network architecture"],
-#             ["Pruning"], ["Ratings Prediction"], ["Attentive"],
-#             ["end-to-end approach"], ["Data Modality"], ["Query Suggestions"],
-#             ["Representation learning"], ["Memory-based approaches"],
-#             ["Algorithm Flexibil"], ["Pre-trained Model"],
-#             ["Multi-criteria ratings"], ["time-based Recommendations"],
-#             ["Session-based"], ["Negative feedback"],
-#             ["hierarchical clustering"], ["neighborhood-based"],
-#             ["Search trail Recommendations"], ["time-aware Recommendations"],
-#             ["Tree Based"], ["opinion mining"], ["Density-Based"],
-#             ["Sampling based"], ["positive relevance feedback"],
-#             ["graph ranking"], ["image-based"], ["query scoping"],
-#             ["frequency-based"], ["Pattern-based"], ["randomization"],
-#             ["Prediction uncertainty"], ["Query refinement"],
-#             ["Constraint-based"], ["Query Segmentation"], ["contextual graph"],
-#             ["structure-based"], ["Entity Variability"], ["Tag relevance"],
-#             ["image similarity"], ["template-based"], ['Graph Gener'],
-#             ['Image recogn'], ['Transformer'], ['Multi-task', "Multitask"],
-#             ['Parameter estim'], ['Anomaly detect'], ['Dimensionality reduct'],
-#             ['Feature Select']]
+# change it to your name
+active = mehrshad
 
-output = []
-missing = []
+# all pdfs in your entered path (sorted by name)
+allpdf = False
+
+# prints currently checking file
+status = True
+
+# list of pdf names (with or without .pdf)
+filesList = ['file1', 'file2.pdf', '...']
+
+# list of features
+features = [["Rank"], ["Predict"], ["Behavior"], ["Template"], ["Term Weight"],
+            ["Historical"], ["Topic Model"], ["Content"], ["Interact"],
+            ["Filter"], ["Generative"], ["Activity"], ["Hybrid"],
+            ["Occurrence"], ["Semantic"], ["Trained"], ["Context"], ["Query"],
+            ["Text Similar"], ["Smooth"], ["Click"], ["Rule", "Tagging"],
+            ["Language Diversity", "Multilingual"], ["Recommendation"],
+            ["Dimensional", "Multidimensional"], ["Cluster"],
+            ["Geographic", "location"], ["Network"], ["Pruning"], ["Rating"],
+            ["Attentive"], ["End-To-End"], ["Data Modal",
+                                            "Multimodal"], ["Query Suggest"],
+            ["Represent"], ["Memory"], ["Flexibility", "Algorithm-Agnostic"],
+            ["Pre-Trained"], ["Criteria"], ["Time"], ["Session"], ["Feedback"],
+            ["Hierarchical"], ["Neighbor"], ["Search Trail"], ["Time-Aware"],
+            ["Tree"], ["Opinion"], ["Density"], ["Sampling"],
+            ["Relevance Feedback",
+             "Positive Feedback"], ["Graph"], ["Image"], ["Query Scop"],
+            ["Frequen"], ["Pattern"], ["Random"], ["Uncertain"],
+            ["Query Refinement"], ["Constraint"], ["Segmentation"],
+            ["Contextual Graph"], ["Structure"], ["Entit"], ["Tag Relevan"],
+            ["Image Similar"], ["Graph Generat"], ["Image Recogn"],
+            ["Transformer"], ["Multi-Task"], ["Parameter Estimat"], ["Anomal"],
+            ["Dimensionality Reduction"], ["Feature Select"]]
+
 print(f"Features count: {len(features)}")
-ls = [1017, 1020]
-t = ls[0]
-for number in ls:
-    if type(number) != int:
-        output.append('')
-        continue
+
+if '\\' not in active[-2:]:
+    active = active + r'\\'
+if allpdf:
+    filesList = []
+    for file in os.listdir(active):
+        if file.endswith('.pdf'):
+            filesList.append(file)
+output = []
+for z in filesList:
+    item = str(z)
+    if '.pdf' not in item:
+        item = item + '.pdf'
+    if status:
+        print(f'Checking: {item}')
+    path = active + item
     try:
-        mehrshad = shortcut(number)
-        pdfFileObj = open(mehrshad, 'rb')
+        pdfFileObj = open(path, 'rb')
     except:
-        print(number)
-        missing.append(str(number))
-        output.append('')
+        print(f'Error: {path} not found!')
         break
-        continue
     features = dict(zip([str(i) for i in features], ['0'] * len(features)))
     featuresandquality = features
     pdfReader = PyPDF2.PdfReader(pdfFileObj)
@@ -82,8 +88,5 @@ for number in ls:
         keys.append(key)
         values.append(featuresandquality[key])
     output.append('\t'.join(values))
-    t = number
-if len(missing) != 0:
-    print(f'Missing files: {"-".join(missing)}')
 pyperclip.copy('\n'.join(output))
-print('Copied to clipboard!')
+print('\nCopied to your clipboard!\nPaste from "AZ" column!')

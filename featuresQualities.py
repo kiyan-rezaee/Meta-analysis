@@ -6,7 +6,7 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\1312.1611.pdf"
 sara = r"C:\Users\saram\Desktop\10.pdf"
 morteza = r"../unige_102091_attachment01.pdf"
-mehrshad = shortcut(1053)
+mehrshad = shortcut(932)
 
 # creating a pdf file object
 pdfFileObj = open(mehrshad, 'rb')
@@ -54,11 +54,10 @@ quality = [
 features = [["Ranking"], ["Prediction"], ["Session-based Recommendations"],
             ["graph generation"], ["Term Weighting"],
             ["Historical Data-Driven Recommendations"], ["Topic Modeling"],
-            ["content-based Recommendations"],
-            ["User Interaction"], ["Filtering"],
-            ["Generative model"], ["Activity-Based Recommendations"],
-            ["hybrid recommendation"], ["Co-Occurrence Analysis"],
-            ["semantic analysis"], ["Model-based"],
+            ["content-based Recommendations"], ["User Interaction"],
+            ["Filtering"], ["Generative model"],
+            ["Activity-Based Recommendations"], ["hybrid recommendation"],
+            ["Co-Occurrence Analysis"], ["semantic analysis"], ["Model-based"],
             ["Context-aware Recommendations"], ["Query-based"],
             ["text similarity"], ["Smoothing"],
             ["Click-through Recommendations"], ["rule-based tagging"],
@@ -66,17 +65,15 @@ features = [["Ranking"], ["Prediction"], ["Session-based Recommendations"],
             ["Data Dimensionality"], ["Word cluster"],
             ["Geographic Support Recommendations"], ["network architecture"],
             ["Pruning"], ["Ratings Prediction"], ["Attentive"],
-            ["end-to-end approach"], ["Data Modality"],
-            ["Query Suggestions"], ["Representation learning"],
-            ["Memory-based approaches"],
-            ["Algorithm Flexibil"],
-            ["Pre-trained Model"], ["Multi-criteria ratings"],
-            ["time-based Recommendations"], ["Session-based"],
-            ["Negative feedback"], ["hierarchical clustering"],
-            ["neighborhood-based"], ["Search trail Recommendations"],
-            ["time-aware Recommendations"], ["Tree Based"], ["opinion mining"],
-            ["Density-Based"], ["Sampling based"],
-            ["positive relevance feedback"],
+            ["end-to-end approach"], ["Data Modality"], ["Query Suggestions"],
+            ["Representation learning"], ["Memory-based approaches"],
+            ["Algorithm Flexibil"], ["Pre-trained Model"],
+            ["Multi-criteria ratings"], ["time-based Recommendations"],
+            ["Session-based"], ["Negative feedback"],
+            ["hierarchical clustering"], ["neighborhood-based"],
+            ["Search trail Recommendations"], ["time-aware Recommendations"],
+            ["Tree Based"], ["opinion mining"], ["Density-Based"],
+            ["Sampling based"], ["positive relevance feedback"],
             ["graph ranking"], ["image-based"], ["query scoping"],
             ["frequency-based"], ["Pattern-based"], ["randomization"],
             ["Prediction uncertainty"], ["Query refinement"],
@@ -88,8 +85,8 @@ features = [["Ranking"], ["Prediction"], ["Session-based Recommendations"],
             ['Feature Select']]
 print(f"Qualities count: {len(quality)}")
 print(f"Features count: {len(features)}")
-quality = dict(zip([str(i) for i in quality], [""] * len(quality)))
-features = dict(zip([str(i) for i in features], [""] * len(features)))
+quality = dict(zip([str(i) for i in quality], ['0'] * len(quality)))
+features = dict(zip([str(i) for i in features], ['0'] * len(features)))
 featuresandquality = quality.copy()
 featuresandquality.update(features)
 
@@ -100,11 +97,11 @@ for i in range(len(pdfReader.pages)):
     pageObj = pdfReader.pages[i]
     page = pageObj.extract_text().lower()
     for j in featuresandquality.keys():
-        if featuresandquality[j] == "X":
+        if featuresandquality[j] == "1":
             continue
         for k in eval(j):
             if k.lower() in page:
-                featuresandquality[j] = 'X'
+                featuresandquality[j] = '1'
                 break
 
 keys = []
@@ -112,7 +109,7 @@ values = []
 
 
 def excelCol(num):
-    n = num + 14
+    n = num + 14  # N
     result = ""
     while True:
         if n > 26:
@@ -128,13 +125,13 @@ for key, col in zip(featuresandquality, range(9999)):
     if col >= len(quality.keys()) and flag:
         flag = False
         print('\nFEATURES:')
-    if featuresandquality[key] == 'X':
+    if featuresandquality[key] == '1':
         print(f"{excelCol(col)}: {eval(key)[0]}")
     keys.append(key)
     values.append(featuresandquality[key])
 
 for i in range(len(quality)):
-    if values[i] == "X":
+    if values[i] == "1":
         if i == list(quality.keys()).index("['Computational cost']"):
             values[i] = "Low"
         else:
