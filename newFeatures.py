@@ -7,13 +7,13 @@ kiyan = r""
 sara = r""
 morteza = r""
 amirhossein = r""
-mehrshad = r"C:\Documents\Mehrshad\User Intent Modeling"
+mehrshad = r"C:\Documents\Mehrshad\User Intent Modeling\Phase 4.1"
 
 # change it to your name
 active = mehrshad
 
 # all pdfs in your entered path (sorted by name)
-allpdf = False
+allpdf = True
 
 # prints currently checking file
 status = True
@@ -22,9 +22,9 @@ status = True
 filesList = ['file1', 'file2.pdf', '...']
 
 # list of features
-features = [["Rank"], ["Predict"], ["Behavior"], ["Template"], ["Term Weight"],
-            ["Historical"], ["Topic Model"], ["Content"], ["Interact"],
-            ["Filter"], ["Generative"], ["Activity"], ["Hybrid"],
+features = [["Rank"], ["Prediction", "predicting"], ["Behavior"], ["Template"],
+            ["Term Weight"], ["Historical"], ["Topic Model"], ["Content"],
+            ["Interact"], ["Filter"], ["Generative"], ["Activity"], ["Hybrid"],
             ["Occurrence"], ["Semantic"], ["Trained"], ["Context"], ["Query"],
             ["Text Similar"], ["Smooth"], ["Click"], ["Rule", "Tagging"],
             ["Language Diversity", "Multilingual"], ["Recommendation"],
@@ -36,14 +36,14 @@ features = [["Rank"], ["Predict"], ["Behavior"], ["Template"], ["Term Weight"],
             ["Pre-Trained"], ["Criteria"], ["Time"], ["Session"], ["Feedback"],
             ["Hierarchical"], ["Neighbor"], ["Search Trail"], ["Time-Aware"],
             ["Tree"], ["Opinion"], ["Density"], ["Sampling"],
-            ["Relevance Feedback",
-             "Positive Feedback"], ["Graph"], ["Image"], ["Query Scop"],
-            ["Frequen"], ["Pattern"], ["Random"], ["Uncertain"],
-            ["Query Refinement"], ["Constraint"], ["Segmentation"],
-            ["Contextual Graph"], ["Structure"], ["Entit"], ["Tag Relevan"],
-            ["Image Similar"], ["Graph Generat"], ["Image Recogn"],
-            ["Transformer"], ["Multi-Task"], ["Parameter Estimat"], ["Anomal"],
-            ["Dimensionality Reduction"], ["Feature Select"]]
+            ["Relevance Feedback", "Positive Feedback"], ["Graph"], ["Image"],
+            ["Query Scop"], ["Frequen"], ["Pattern"], ["Random"],
+            ["Uncertain"], ["Query Refinement"], ["Constraint"],
+            ["Segmentation"], ["Contextual Graph"], ["Structure"], ["Entit"],
+            ["Tag Relevan"], ["Image Similar"], ["Graph Generat"],
+            ["Image Recogn"], ["Transformer"], ["Multi-Task"],
+            ["Parameter Estimat"], ["Anomal"], ["Dimensionality Reduction"],
+            ["Feature Select"]]
 
 print(f"Features count: {len(features)}")
 

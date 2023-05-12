@@ -11,11 +11,7 @@ folderPath = r'C:\Documents\Mehrshad\User Intent Modeling\farshidi'
 newFolderPath = r'C:\Documents\Mehrshad\User Intent Modeling'
 # Set the search string
 titleDict = {
-    'Web service recommendation for mashup creation based on graph network':
-    1017,
-    'User intent prediction search engine system based on query analysis and image recognition technologies':1006,
-    'DHSIRS':1010,
-    'Recommendation model based on multi-grained interaction that fuses users’ dynamic interests':1020,
+    'How to Approach Ambiguous Queries in Conversational Search': 73,
 }
 renameDict = {}
 logging.getLogger('PyPDF2').setLevel(logging.CRITICAL)
