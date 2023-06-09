@@ -6,7 +6,7 @@ import pyperclip
 kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\1312.1611.pdf"
 sara = r"C:\Users\saram\Desktop\10.pdf"
 morteza = r"../unige_102091_attachment01.pdf"
-mehrshad = shortcut(932)
+mehrshad = shortcut(1)
 
 # creating a pdf file object
 pdfFileObj = open(mehrshad, 'rb')
@@ -60,7 +60,7 @@ features = [["Ranking"], ["Prediction"], ["Session-based Recommendations"],
             ["Co-Occurrence Analysis"], ["semantic analysis"], ["Model-based"],
             ["Context-aware Recommendations"], ["Query-based"],
             ["text similarity"], ["Smoothing"],
-            ["Click-through Recommendations"], ["rule-based tagging"],
+            ["Click-through Recommendations"], ["rule-based"],
             ["Language Diversity"], ["Item recommendation"],
             ["Data Dimensionality"], ["Word cluster"],
             ["Geographic Support Recommendations"], ["network architecture"],

@@ -13,13 +13,13 @@ mehrshad = r"C:\Documents\Mehrshad\User Intent Modeling\Phase 4.1"
 active = mehrshad
 
 # all pdfs in your entered path (sorted by name)
-allpdf = True
+allpdf = False
 
 # prints currently checking file
 status = True
 
 # list of pdf names (with or without .pdf)
-filesList = ['file1', 'file2.pdf', '...']
+filesList = [i for i in range(266, 274 + 1)]
 
 # list of features
 features = [["Rank"], ["Prediction", "predicting"], ["Behavior"], ["Template"],
