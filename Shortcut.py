@@ -1,4 +1,6 @@
-def shortcut(fname, name='mehrshad', form='.pdf'):
+def shortcut(fname, name='mehrshad', folder='', form='.pdf'):
     if name == 'mehrshad':
-        path = r"C:\Documents\Mehrshad\User Intent Modeling"
-    return path + '\\' + str(fname) + form
+        path = f"C:\\Documents\\Mehrshad\\User Intent Modeling\\{folder}"
+        if folder != '':
+            path += '\\'
+    return path + str(fname) + form

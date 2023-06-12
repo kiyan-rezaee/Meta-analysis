@@ -1,7 +1,15 @@
-import PyPDF2
 import re
+import PyPDF2
+import pyperclip
+from Shortcut import shortcut
 
-address = r"C:\Documents\Mehrshad\User Intent Modeling\A survey of sentiment analysis in social media.pdf"
+kiyan = r"C:\Users\kiyan\Desktop\research code\code\papers\1312.1611.pdf"
+sara = r"C:\Users\saram\Desktop\10.pdf"
+morteza = r"../unige_102091_attachment01.pdf"
+mehrshad = shortcut('A survey of sentiment analysis in social media',
+                    folder='Comparison')
+
+address = mehrshad
 
 # The first boolean is for printing founded items
 ls = {
@@ -16,7 +24,7 @@ ls = {
         "feature": [True, []],
         "evaluation": [False, []],
         "model": [False, []]
-    }
+    },
 }
 
 with open('data.json', 'r') as file:
@@ -43,11 +51,14 @@ with open(address, 'rb') as file:
                             ls[a][b][-1].append(item)
                             break
 print('---')
-
+out = []
 for phase in ls.keys():
     for category in ls[phase].keys():
         temp = set(ls[phase][category][-1])
+        out.append(str(len(temp)))
         print(f"{phase} - {category} - count: {len(temp)}")
         if ls[phase][category][0]:
             print('\n'.join(temp))
         print('---')
+pyperclip.copy('\t'.join(out))
+print('copied to clipboard!')
